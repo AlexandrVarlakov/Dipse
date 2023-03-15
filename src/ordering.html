@@ -1,0 +1,256 @@
+@@include('templates/head.html')
+    @@include('templates/header.html')
+    <main class="mb-lg-12 mb-sm-10 mb-8 can-sticky">
+        @@include('templates/breadcrumbs.html')
+        @@include('templates/hamburger-menu.html')
+        
+        @@include('templates/catalog-menu.html')
+
+
+        @@include('templates/bottom-menu.html')
+
+
+
+        <section class="section">
+            <div class="section__inner">
+                <h1 class="h1">Оформление заказа</h1>
+                
+                <form action="">
+
+                    <div class="row mb-8">
+                        <div class="col-12 col-lg-8 me-xxl-auto mb-3">
+                            <h3 class="h3 mb-4 mb-sm-6 mb-lg-8">1. Данные получателя</h3>
+                            <h3 class="h3 mb-4 mb-sm-6">Получатель</h3>
+
+                            <div class="grid-form-ordering mb-6 mb-sm-8 mb-lg-11">
+                                <div class="form-input">
+                                    <label for="name" class="input-label">Ваше имя*</label>
+                                    <input type="text" class="input border-input h-64" placeholder="Имя" name="name" id="name" required>
+                                </div>
+                                <div class="form-input">
+                                    <label for="surname" class="input-label">Ваша фамилия*</label>
+                                    <input type="text" class="input border-input h-64" placeholder="Фамилия" name="surname" id="surname" required>
+                                </div>
+                                <div class="form-input">
+                                    <label for="phone" class="input-label">Телефон*</label>
+                                    <input type="tel" class="input border-input h-64" placeholder="Телефон" name="phone" id="phone" required>
+                                </div>
+                                <div class="form-input">
+                                    <label for="phone-2" class="input-label">Телефон, если не дозвонимся</label>
+                                    <input type="tel" class="input border-input h-64" placeholder="Телефон" name="phone-2" id="phone" >
+                                </div>
+
+                                <div class="form-input">
+                                    <label for="city" class="input-label">Город</label>
+                                    <input type="text" class="input border-input" placeholder="Город" name="city" id="city">
+                                </div>
+                                <div class="form-input">
+                                    <label for="address" class="input-label">Адрес</label>
+                                    <input type="text" class="input border-input" placeholder="Адрес" name="address" id="address">
+                                </div>
+                            </div>
+
+                            <h3 class="h3 mb-4 mb-sm-6 mb-lg-8">2. Способ получения</h3>
+
+
+                            <div class="bp-details mb-8 mb-lg-9">
+                                <div class="bp-details__tabs-list pb-6">
+                                    <div class="bp-details__tab tab active" data-target="#bp-details-sheet-1" data-family="bp-datails">                                                        
+                                        СДЭК
+                                    </div>
+            
+                                    <div class="bp-details__tab tab" data-target="#bp-details-sheet-2" data-family="bp-datails">
+                                        BoxBerry
+                                    </div>
+                                </div>
+                                <div class="bp-details__sheets accordion mb-sm-7">
+                                    
+            
+            
+                                    <div class="cat-sheet active" id="bp-details-sheet-1">
+                                        <div class="cat-sheet__title-block delivery-spoiler-header spoiler-header" data-target="#bp-details-sheet-content-1">
+                                            
+                                                
+                                            <div class="del-company-logo mb-lg-3">
+                                                <img src="assets/img/delivery-logo/cdek.png" alt="">
+                                            </div>
+                
+                                            <img src="assets/img/icons/acc-arrow.svg" alt="" class="cat-sheet__arrow spoiler-arrow ">
+                                        </div>                                
+                                        <div class="cat-sheet__body spoiler-body" id="bp-details-sheet-content-1">
+                                            <div data-measure="" class="py-4">
+                                                <p class="lg-text ">Получение заказа курьерами или в пунктах выдачи заказов компании СДЭК. Служба доставки СДЭК имеет более 4000 пунктов выдачи заказов в более чем 900 городах России.Данный способ доставки имеет ограничения по весу до 25 кг, и сумма трёх сторон посылки не должна превышать 150 см.Возможны другие ограничения введённые компанией СДЭК, касающиеся транспортировки опасных грузов: аккумуляторы, жидкие и прочие химические реактивы в аэрозолях и бутылках, сжатый газ под давлением (подробности уточняйте у менеджеров).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="cat-sheet" id="bp-details-sheet-2">
+                                        <div class="cat-sheet__title-block  delivery-spoiler-header spoiler-header" data-target="#bp-details-sheet-content-2">
+                                                                                
+                                            <div class="del-company-logo mb-lg-3">
+                                                <img src="assets/img/delivery-logo/boxberry.png" alt="">
+                                            </div>            
+                                            <img src="assets/img/icons/acc-arrow.svg" alt="" class="cat-sheet__arrow spoiler-arrow">
+                                        </div>  
+                                        
+                                        
+                                        <div class="cat-sheet__body spoiler-body" id="bp-details-sheet-content-2">
+                                            <div data-measure="" class="py-4">
+                                                
+                                                <p class="lg-text  ">Получение заказов в пунктах выдачи заказов Boxberry – это более 4200 отделений в 660 городах РФ.Наибольший вес одного места в заказе, не должен превышать 15 кг. Длина наибольшей стороны не должна превышать 1.2 м.</p>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+
+
+                            <!--
+                            <div class="button-radio-group mb-4 mb-sm-6">
+                                
+
+                                <div class="button-radio">
+                                    <input type="radio" name="way-reception" id="way-reception-1" value="way-reception-1" class="button-radio__radio">
+                                    <label for ="way-reception-1" class="button-radio__visible">Доставка</label>
+                                </div>
+                                <div class="button-radio">
+                                    <input type="radio" name="way-reception" id="way-reception-2" value="way-reception-2" class="button-radio__radio">
+                                    <label for ="way-reception-2" class="button-radio__visible">Другие способы</label>
+                                </div>
+                                
+                                
+                            </div>
+                            
+                            <div class="mb-8 mb-sm-9 mb-lg-11">
+                                <div class="delivery-data mb-4 mb-sm-6">
+                                    <div class="delivery-data__icon">
+                                        <img src="assets/img/icons/map-pin.svg" alt="">
+                                    </div>
+                                    <div class="delivery-data__text-block">
+                                        <p class="text">Новосибирская обл., Новосибирский район, с. Каменка, микрорайон Близкий, д. 876А</p>
+                                    </div>
+                                </div>
+    
+                                <div class="delivery-data w-sm-50">
+                                    <div class="delivery-data__icon">
+                                        <img src="assets/img/icons/clock.svg" alt="">
+                                    </div>
+                                    <div class="delivery-data__text-block">
+                                        <ul class="delivery-data__list">
+                                            <li class="delivery-data__list-item">
+                                                <span class="text">Пн-Пт</span>
+                                                <span class="delivery-data__dashed text"></span>
+                                                <span class="text">с 10:00 до 20:00</span>
+                                            </li>
+                                            <li class="delivery-data__list-item mt-3 mt-lg-6">
+                                                <span class="text">Сб</span>
+                                                <span class="delivery-data__dashed text"></span>
+                                                <span class="text">с 10:00 до 15:00</span>
+                                            </li>
+                                            <li class="delivery-data__list-item mt-3 mt-lg-6">
+                                                <span class="text">Вс</span>
+                                                <span class="delivery-data__dashed text"></span>
+                                                <span class="text">выходной</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>-->
+                            
+
+                            <h3 class="h3 mb-4 mb-sm-6 mb-lg-8">3. Подтверждение и оплата</h3>
+
+                            <div class="button-radio-group with-gap mb-7 mb-sm-8">
+                                
+
+                                <div class="button-radio w-100 w-sm-auto">
+                                    <input type="radio" name="pay-method" id="method-pay-1" value="method-pay-1" class="button-radio__radio">
+                                    <label for ="method-pay-1" class="button-radio__visible">Наличными или картой при получении</label>
+                                </div>
+                                <div class="button-radio w-100 w-sm-auto">
+                                    <input type="radio" name="pay-method" id="method-pay-2" value="method-pay-2" class="button-radio__radio">
+                                    <label for ="method-pay-2" class="button-radio__visible">Банковской картой онлайн</label>
+                                </div>
+                                
+                                <div class="button-radio w-100 w-sm-auto">
+                                    <input type="radio" name="pay-method" id="method-pay-3" value="method-pay-3" class="button-radio__radio">
+                                    <label for ="method-pay-3" class="button-radio__visible">Ещё способ оплаты</label>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-12 col-sm-9 col-xxl-6">
+                                    <label for="promocode " class="text text-dblue pb-2 l-promocode pb-sm-4">Ввести промокод</label>
+                                    <input type="text" class="input border-input h-64"  id="promocode" placeholder="Промокод">
+                                </div>
+                                <div class="col-12 mb-4 col-sm-3 mb-sm-0 ordering-applypromo-wrap">
+                                    <button class="button button-green-border w-100 w-sm-auto h-64">применить</button>
+                                </div>
+
+                                <div class="col-12 pt-sm-8">
+                                    <textarea name="comment"  class="textarea border-input ordering-comment" placeholder="Комментарии к заказу"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--!!!-->
+                        <div class="col-12 col-lg-4 col-xxl-3">
+                            <div class="about-order">
+                                <h2 class="h2 mb-6">3 позиции в заказе</h2>
+
+                                <ul class="mb-lg-6">
+                                    <li class="mb-6">
+                                        <p class="text text-black mb-2 mb-lg-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+                                        <div class="text text-ddblue ordering-pos"><span>1 шт</span>   <span>1 300 ₽</span></div>
+                                    </li>
+
+                                    <li class="mb-6">
+                                        <p class="text text-black mb-lg-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+                                        <div class="text text-ddblue ordering-pos"><span>1 шт</span>   <span>1 300 ₽</span></div>
+                                    </li>
+                                    <li >
+                                        <p class="text text-black mb-lg-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+                                        <div class="text text-ddblue ordering-pos"><span>1 шт</span>   <span>1 300 ₽</span></div>
+                                    </li>
+                                </ul>
+
+                                <p class="h3 d-none d-lg-block">Итого: 112 400 ₽</p>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="big-text text-black mb-2">3 товара</p>
+                            <p class="big-price ordering-calc-summ text-black mb-6 mb-sm-9 mb-lg-7">Итого: 112 400 ₽</p>
+
+                            <button class="button button-green w-100 w-sm-auto">
+                                оформить заказ 
+                                <img src="assets/img/icons/button-arrow.svg" alt="">
+                            </button>
+
+                            <p class="text text-black mt-9 d-none d-sm-block w-lg-50">Нажимая кнопку «Оформить заказ», я даю свое согласие на сбор и обработку моих персональных данных в соответствии с <a href="#" class="md-link">Политикой</a> и принимаю условия <a href="#" class="md-link">Публичной оферты</a></p>
+                        </div>
+                        
+                    </div>
+                </form>
+
+
+            </div>
+        </section>
+        
+    </main>
+    @@include('templates/auth-modal.html')
+    @@include('templates/partner-modal.html')
+    @@include('templates/thanks-modal.html')
+    @@include('templates/footer.html')
+@@include('templates/foot.html')

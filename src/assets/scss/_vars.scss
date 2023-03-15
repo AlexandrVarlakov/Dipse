@@ -1,0 +1,93 @@
+/*break-points*/
+$sm: 680px;
+$md: 768px;
+$lg: 992px;
+$xl: 1300px;
+$xxl: 1600px;
+
+$break-points: (
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+  xxl: $xxl
+);
+
+$length:(
+    auto: auto,
+    25: 25%,
+    33: 33.3333333333%,
+    50: 50%,
+    66: 66.66666666666%,
+    75: 75%,
+    100: 100%,
+);
+
+
+$offsets:(
+    0: 0rem, //0
+    1: 0.25rem, //4
+    2: 0.5rem, // 8
+    3: 0.75rem, // 12 
+    4: 1rem, // 16
+    5: 1.25rem, // 20
+    6: 1.5rem, // 24
+    7: 2rem, //32
+    8: 2.5rem, // 40
+    9: 3rem, // 48
+    10: 3.5rem, // 56
+    11: 4rem, // 64
+    12: 5rem, // 80
+);
+
+
+:root{
+    --gutter-x: 12px;
+    --half-gutter-x: 6px;
+    --section-x-padding: 12px;
+
+    --header-vertical-padding: .25rem;
+
+    --bp-sm: 680;
+    --bp-md: 768;
+    --bp-lg: 992;
+    --bp-xl: 1300;
+    --bp-xxl: 1600;
+
+
+    @media (min-width: $sm){
+        --header-vertical-padding: .625rem;
+    }
+    @media (min-width: $md){
+        --gutter-x: 16px;
+        --half-gutter-x: 8px;
+        
+        --section-x-padding: 24px;
+    }
+    @media (min-width: $xl){
+        --gutter-x: 24px;
+        --half-gutter-x: 12px;
+        --section-x-padding: 80px;
+    }
+    
+    @media (min-width: $xxl){
+        --header-vertical-padding: .75rem;
+    }
+
+    
+    
+}
+
+
+/*colors*/
+$black: #1C2527;
+$green-text: #6BD369;
+$blue-dark: #1FA3C8;
+$blue-darkdark: #126D86;
+$gray: #A4ACAE;
+$gray-light: #E8F0F2;
+$red: #FF5E7B;
+$border: #CFD9DC;
+$blue: #24C0EB;
+$sale-price: #C6CBCC;
+

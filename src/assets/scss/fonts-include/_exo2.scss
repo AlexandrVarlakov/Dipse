@@ -1,0 +1,12 @@
+$exo: 'Exo 2';
+@font-face {
+    font-family: 'Exo 2';
+    src: url('../fonts/exo2/Exo2-Medium.eot');
+    src: local('Exo 2 Medium'), local('Exo2-Medium'),
+        url('../fonts/exo2/Exo2-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/exo2/Exo2-Medium.woff2') format('woff2'),
+        url('../fonts/exo2/Exo2-Medium.woff') format('woff'),
+        url('../fonts/exo2/Exo2-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

@@ -1,0 +1,107 @@
+<header class="header">
+    <div class="header__inner">
+        <div class="row align-items-xxl-start align-items-center">
+            <div class="col-sm-1 col-2">
+                <a href="index.html" class="header__logo">
+                    <img src="assets/img/logo.svg" alt="">
+                </a>
+            </div>
+
+            <div class="col-xl-11 col-sm-10 col-8 ps-xxl-0 ps-md-8">
+                <div class="header__top">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="#">Контактная информация</a></li>                    
+                            <li><a href="#">О компании</a></li>                    
+                            <li><a href="#">Способы доставки</a></li>                    
+                            <li><a href="#">Способы оплаты</a></li>                    
+                            <li><a href="#">Контакты</a></li>                    
+                        </ul>
+                    </nav>
+
+                    <ul class="header__contacts">
+                        <li><a href="tel:+73833817442">+7 (383) 381-74-42</a></li>
+                        <li><a href="mailto:sale@dipse.ru">sale@dipse.ru</a></li>
+                    </ul>
+                </div>
+                <div class="header__bottom">
+                    <button class="catalog-btn">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 8H27" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 16H27" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 24H27" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5 8H7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5 16H7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5 24H7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Каталог
+                    </button>
+
+                    <form action="#" class="search-form" method="get">
+                        <img src="assets/img/icons/search.svg" alt="" class="search-form__icon">
+                        <input type="text" name="search" placeholder="Например, транзистор">
+                        <button class="search-form__btn">
+                            <span class="search-form__btn-text">Найти</span>
+                            
+                            <img src="assets/img/icons/button-arrow.svg" alt="" class="search-form__btn-arrow">
+                            <img src="assets/img/icons/search-big.svg" alt="" class="search-form__zoom">
+                        </button>
+                    </form>
+
+                    <button class="user-btn" data-role="call-modal" data-target=".modal[data-name='auth-modal']">
+                        <span class="user-btn__icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 20C18.7614 20 21 17.7614 21 15C21 12.2386 18.7614 10 16 10C13.2386 10 11 12.2386 11 15C11 17.7614 13.2386 20 16 20Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.97461 24.9248C8.727 23.4428 9.87506 22.1981 11.2915 21.3287C12.708 20.4592 14.3376 19.999 15.9996 19.999C17.6616 19.999 19.2912 20.4592 20.7077 21.3287C22.1242 22.1981 23.2722 23.4428 24.0246 24.9248" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>                                    
+                            </svg>
+                        </span>
+                        <span class="user-btn__text">
+                            Личный кабинет
+                        </span>
+                    </button>
+                    <a href="#" class="user-btn">
+                        <span class="user-btn__icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001V9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <span class="user-btn__text">
+                            Избранное
+                        </span>
+                    </a>
+                    <a href="#" class="user-btn">
+                        <span class="user-btn__icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">                                    
+                                <path d="M23 23H8.725L5.2375 3.825C5.1967 3.59537 5.07691 3.38722 4.89887 3.23657C4.72082 3.08592 4.49572 3.00223 4.2625 3H2" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 28C11.3807 28 12.5 26.8807 12.5 25.5C12.5 24.1193 11.3807 23 10 23C8.61929 23 7.5 24.1193 7.5 25.5C7.5 26.8807 8.61929 28 10 28Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23 28C24.3807 28 25.5 26.8807 25.5 25.5C25.5 24.1193 24.3807 23 23 23C21.6193 23 20.5 24.1193 20.5 25.5C20.5 26.8807 21.6193 28 23 28Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.8125 18H23.5125C23.98 18.0014 24.433 17.838 24.7919 17.5386C25.1508 17.2391 25.3927 16.8227 25.475 16.3625L27 8H6" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>                                    
+                            </svg>
+                            <span class="user-btn__product-qty">12</span>
+                        </span>
+                        <span class="user-btn__text">
+                            Корзина
+                        </span>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-2 d-xxl-none">
+                <div class="hamburger  ">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            
+
+        </div>
+        
+
+        
+    </div>
+
+    
+</header>

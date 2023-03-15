@@ -1,0 +1,143 @@
+.hm-container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    
+    z-index: 900;
+
+    overflow: hidden;
+
+    display: none;
+
+    @media (min-width: $xl){
+        display: none !important;
+    }
+}
+
+.hm-container.show{
+    display: block;
+
+    .hamburger-menu{
+        animation: showMenu 300ms ease-in-out forwards;
+    }
+}
+
+
+@keyframes showMenu {
+    to{
+        transform: translateX(0%);
+    }
+}
+
+.hamburger-menu{
+    
+    height: 100%;
+    margin-left: auto;
+    background-color: #fff;
+    box-shadow: -10px 0px 20px rgba(24, 139, 171, 0.05);
+    position: relative;
+
+    padding: 92px 12px 0;
+    width: 100%;
+
+
+    overflow-y: auto;
+
+    @media (min-width: $sm){
+        padding: 64px 100px 0;
+        width: 85.9375%;
+        
+    }
+
+    transform: translateX(120%);
+}
+
+.hamburger-menu__inner{
+    padding-bottom: 32px;    
+}
+
+.hamburger-menu__close-btn{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    @media (min-width: $sm){
+        top: 30px;
+        right: 24px;
+    }
+
+    
+}
+
+.hamburger-menu__nav-link{
+    color: $black;
+    @include text;
+    
+    @media (min-width: 100px){
+        @include text-xl;
+    }
+
+    &:hover{
+        color: $blue;
+    }
+    
+}
+
+.hamburger-menu__contacts{
+    @media (min-width: $sm){
+        display: flex;
+    }
+
+    li{
+        @media (min-width: $sm){
+            &:not(:first-of-type){
+                padding-left: 48px;
+                position: relative;
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 23px;
+                    width: 2px;
+                    height: 15px;
+                    background-color: $black;
+
+                    transform: translate(0, -50%);
+                }
+            }
+        }
+    }
+    a.mail{
+        color: $blue-dark;   
+    }
+    a{
+        color: $black;
+        @include text;
+        
+        @media (min-width: 100px){
+            @include text-xl;
+        }
+
+        &:hover{
+            color: $blue;
+        }
+    }
+
+    
+}
+
+.hamburger-menu__logo{
+    display: inline-block;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    @media (min-width: $sm){
+        display: none;    
+    }
+    img{
+        max-width: 39px;
+        
+    }
+}

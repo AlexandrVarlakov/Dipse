@@ -1,0 +1,56 @@
+.d-none{
+    display: none !important;
+}
+.d-block{
+    display: block !important;
+}
+.d-inline-block{
+    display: inline-block !important;
+}
+
+.d-flex{
+    display: flex !important;
+}
+
+.d-inline-flex{
+    display: inline-flex !important;
+}
+
+@each $bp-name, $break-point in $break-points {
+
+    .d-#{$bp-name}-none{
+        
+        @media (min-width: $break-point){
+            display: none !important;    
+        }
+    }
+
+    .d-#{$bp-name}-block{
+        
+        @media (min-width: $break-point){
+            display: block !important;    
+        }
+    }
+
+    .d-#{$bp-name}-inline-block{
+        
+        @media (min-width: $break-point){
+            display: inline-block !important;    
+        }
+    }
+
+    .d-#{$bp-name}-flex{
+        
+        @media (min-width: $break-point){
+            display: flex !important;    
+        }
+    }
+
+    .d-#{$bp-name}-inline-flex{
+        
+        @media (min-width: $break-point){
+            display: inline-flex !important;    
+        }
+    }   
+    
+}

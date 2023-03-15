@@ -1,0 +1,229 @@
+
+@each $number, $offset in $offsets {
+    //padding-top
+    .pt-#{$number}{
+        padding-top: $offset !important;
+    }
+    //padding-bottom
+    .pb-#{$number}{
+        padding-bottom: $offset !important;
+    }
+    //padding-left
+    .ps-#{$number}{
+        padding-left: $offset !important;
+    }
+    //padding-right
+    .pe-#{$number}{
+        padding-right: $offset !important;
+    }
+    //padding-left +  padding-right
+    .px-#{$number}{
+        padding-left: $offset !important;
+        padding-right: $offset !important;
+    }
+    //padding-top +  padding-bottom
+    .py-#{$number}{
+        padding-top: $offset !important;
+        padding-bottom: $offset !important;
+    }
+
+    /********************************/
+
+     //margin-top
+    .mt-#{$number}{
+        margin-top: $offset !important;
+    }
+    //margin-bottom
+    .mb-#{$number}{
+        margin-bottom: $offset !important;
+    }
+    //margin-left
+    .ms-#{$number}{
+        margin-left: $offset !important;
+    }
+    //margin-right
+    .me-#{$number}{
+        margin-right: $offset !important;
+    }
+    //margin-left +  margin-right
+    .mx-#{$number}{
+        margin-left: $offset !important;
+        margin-right: $offset !important;
+    }
+    //margin-top +  margin-bottom
+    .my-#{$number}{
+        margin-top: $offset !important;
+        margin-bottom: $offset !important;
+    }
+}
+
+@each $bp-name, $break-point in $break-points {
+    @each $number, $offset in $offsets {
+        //padding-top
+        .pt-#{$bp-name}-#{$number}{
+            @media (min-width: $break-point){
+                padding-top: $offset !important;
+            }
+            
+        }
+        //padding-bottom
+        .pb-#{$bp-name}-#{$number}{
+            @media (min-width: $break-point){
+                padding-bottom: $offset !important;
+            }
+            
+        }
+        //padding-left
+        .ps-#{$bp-name}-#{$number}{
+            @media (min-width: $break-point){
+                padding-left: $offset !important;
+            }
+            
+        }
+        //padding-right
+        .pe-#{$bp-name}-#{$number}{
+            @media (min-width: $break-point){
+                padding-right: $offset !important;
+            }
+            
+        }
+        //padding-left +  padding-right
+        .px-#{$bp-name}-#{$number}{
+            @media (min-width: $break-point){
+                padding-left: $offset !important;
+                padding-right: $offset !important;
+            }
+            
+        }
+        //padding-top +  padding-bottom
+        .py-#{$bp-name}-#{$number}{
+            @media (min-width: $break-point){
+                padding-top: $offset !important;
+                padding-bottom: $offset !important;
+            }
+            
+        }
+
+        /********************************/
+
+        //margin-top
+        .mt-#{$bp-name}-#{$number}{
+            @media (min-width: $break-point){
+                margin-top: $offset !important;
+            }
+            
+        }
+        //margin-bottom
+        .mb-#{$bp-name}-#{$number}{
+            @media (min-width: $break-point){
+                margin-bottom: $offset !important;
+            }
+            
+        }
+        //margin-left
+        .ms-#{$bp-name}-#{$number}{
+            @media (min-width: $break-point){
+                margin-left: $offset !important;
+            }
+            
+        }
+        //margin-right
+        .me-#{$bp-name}-#{$number}{
+            @media (min-width: $break-point){
+                margin-right: $offset !important;
+            }
+            
+        }
+        //margin-left +  margin-right
+        .mx-#{$bp-name}-#{$number}{
+            @media (min-width: $break-point){
+                margin-left: $offset !important;
+                margin-right: $offset !important;
+            }
+            
+        }
+        //margin-top +  margin-bottom
+        .my-#{$bp-name}-#{$number}{
+            @media (min-width: $break-point){
+                margin-top: $offset !important;
+                margin-bottom: $offset !important;
+            }
+            
+        }
+    }
+}
+.mt-auto{    
+    margin-top: auto !important;    
+    
+}
+//margin-bottom
+.mb-auto{    
+    margin-bottom: auto !important;
+}
+//margin-left
+.ms-auto{    
+    margin-left: auto !important;    
+    
+}
+//margin-right
+.me-auto{    
+    margin-right: auto !important;
+}
+//margin-left +  margin-right
+.mx-auto{    
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+//margin-top +  margin-bottom
+.my-auto{
+   
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+       
+}
+@each $bp-name, $break-point in $break-points {
+    //margin-top
+    .mt-#{$bp-name}-auto{
+        @media (min-width: $break-point){
+            margin-top: auto !important;
+        }
+        
+    }
+    //margin-bottom
+    .mb-#{$bp-name}-auto{
+        @media (min-width: $break-point){
+            margin-bottom: auto !important;
+        }
+        
+    }
+    //margin-left
+    .ms-#{$bp-name}-auto{
+        @media (min-width: $break-point){
+            margin-left: auto !important;
+        }
+        
+    }
+    //margin-right
+    .me-#{$bp-name}-auto{
+        @media (min-width: $break-point){
+            margin-right: auto !important;
+        }
+        
+    }
+    //margin-left +  margin-right
+    .mx-#{$bp-name}-auto{
+        @media (min-width: $break-point){
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        
+    }
+    //margin-top +  margin-bottom
+    .my-#{$bp-name}-auto{
+        @media (min-width: $break-point){
+            margin-top: auto !important;
+            margin-bottom: auto !important;
+        }
+        
+    }
+}

@@ -1,0 +1,206 @@
+@@include('templates/head.html')
+    @@include('templates/header.html')
+    <main>
+        @@include('templates/breadcrumbs.html')
+        @@include('templates/hamburger-menu.html')
+        
+        @@include('templates/catalog-menu.html')
+
+
+        @@include('templates/bottom-menu.html')
+
+
+        
+
+
+        <section class="section mb-8 mb-sm-10 mb-lg-12 pb-lg-5 pb-xxl-8">
+            <div class="section__inner">
+                <h1 class="h1">Вопрос ответ</h1>
+                <button class="button button-green w-100 w-sm-auto mb-sm-2 mb-lg-6" data-role="call-modal" data-target=".modal[data-name='faq-modal']">
+                    Задать вопрос
+                        
+                </button>
+                <div class="accordion" data-setting="only-one">
+                    <div class="faq-item">
+                        <div class="faq-header spoiler-header open" data-target="#faq-1">
+                            <p class="faq-header__text">Как я могу оформить заказ?</p>
+                            <img src="assets/img/icons/acc-arrow.svg" alt="" class="faq-header__arrow spoiler-arrow ">
+                        </div>
+                        <div class="faq-body spoiler-body" id="faq-1">
+                            <div class="faq-body__inner" data-measure="">
+                                <p class="faq-body__text">Вы можете оформить заказ на нашем сайте, добавив нужные товары в корзину. Обращаем ваше внимание что мы торгуем только оптом. Вы также можете связаться с нашим отделом продаж по телефону или электронной почте, чтобы оформить оптовый заказ.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="faq-item">
+                        <div class="faq-header spoiler-header" data-target="#faq-2">
+                            <p class="faq-header__text">Какие условия предоставляются для крупных оптовых заказов?</p>
+                            <img src="assets/img/icons/acc-arrow.svg" alt="" class="faq-header__arrow spoiler-arrow">
+                        </div>
+                        <div class="faq-body spoiler-body" id="faq-2">
+                            <div class="faq-body__inner" data-measure="">
+                                <p class="faq-body__text">Мы предоставляем специальные условия для крупных оптовых заказов, включая скидки на большие заказы, быструю обработку заказа и доставку, а также индивидуальный подход к каждому клиенту.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="faq-item">
+                        <div class="faq-header spoiler-header " data-target="#faq-3">
+                            <p class="faq-header__text">Как я могу узнать о наличии товара на складе?</p>
+                            <img src="assets/img/icons/acc-arrow.svg" alt="" class="faq-header__arrow spoiler-arrow">
+                        </div>
+                        <div class="faq-body spoiler-body" id="faq-3">
+                            <div class="faq-body__inner" data-measure="">
+                                <p class="faq-body__text">Вы можете узнать о наличии товара на нашем сайте, воспользовавшись функцией поиска по каталогу товаров, либо связавшись с нашим отделом продаж по телефону или электронной почте.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="faq-item">
+                        <div class="faq-header spoiler-header" data-target="#faq-4">
+                            <p class="faq-header__text">Какие способы оплаты вы принимаете?</p>
+                            <img src="assets/img/icons/acc-arrow.svg" alt="" class="faq-header__arrow spoiler-arrow">
+                        </div>
+                        <div class="faq-body spoiler-body" id="faq-4">
+                            <div class="faq-body__inner" data-measure="">
+                                <p class="faq-body__text">Мы принимаем оплату за заказы банковским переводом, кредитными картами, электронными платежами и другими способами, которые вы можете найти на нашем сайте, или обсудить с нашим отделом продаж.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="faq-item">
+                        <div class="faq-header spoiler-header " data-target="#faq-5">
+                            <p class="faq-header__text">Как долго будет обрабатываться мой заказ?</p>
+                            <img src="assets/img/icons/acc-arrow.svg" alt="" class="faq-header__arrow spoiler-arrow">
+                        </div>
+                        <div class="faq-body spoiler-body" id="faq-5">
+                            <div class="faq-body__inner" data-measure="">
+                                <p class="faq-body__text">Обработка оптовых заказов занимает от нескольких часов до нескольких недель, в зависимости от сложности заказа и наличия товара в нужном количестве на складе. Мы всегда стараемся обработать заказы как можно быстрее, чтобы вы могли получить свой товар вовремя.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="faq-item">
+                        <div class="faq-header spoiler-header" data-target="#faq-6">
+                            <p class="faq-header__text">Как я могу отменить свой заказ?</p>
+                            <img src="assets/img/icons/acc-arrow.svg" alt="" class="faq-header__arrow spoiler-arrow">
+                        </div>
+                        <div class="faq-body spoiler-body" id="faq-6">
+                            <div class="faq-body__inner" data-measure="">
+                                <p class="faq-body__text">Если вы хотите отменить свой оптовый заказ, свяжитесь с нашим отделом продаж как можно скорее. Если заказ еще не был обработан, мы сможем отменить его без дополнительных расходов.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="faq-item">
+                        <div class="faq-header spoiler-header " data-target="#faq-7">
+                            <p class="faq-header__text">Могу ли я вернуть товар, если он не соответствует моим требованиям?</p>
+                            <img src="assets/img/icons/acc-arrow.svg" alt="" class="faq-header__arrow spoiler-arrow">
+                        </div>
+                        <div class="faq-body spoiler-body" id="faq-7">
+                            <div class="faq-body__inner" data-measure="">
+                                <p class="faq-body__text">Да, мы принимаем возвраты товаров, в течении 14 дней с момента заказа, если они не соответствуют вашим требованиям или являются бракованными. Пожалуйста, свяжитесь с нашим отделом продаж, чтобы организовать возврат товара.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+
+                
+            </div>
+        </section>
+        
+        <section  class="section faq-form-section py-8 py-lg-12">
+            <img src="assets/img/questions.png" alt="" class="faq-form-section__decor">
+            <div class="section__inner">
+                <div class="row">
+                    <div class="col-10 mx-auto col-lg-12 col-xxl-4 mb-4 mb-sm-5 ">
+                        <h2 class="h2 mb-4 mb-sm-5">Не нашли нужного ответа?</h2>
+                        <h3 class="h3">Задайте свой вопрос</h3>
+                    </div>
+                    <div class="col-10 col-lg-12 col-xxl-8 mx-auto">
+                        <form action="script.php" class="faq-from">
+                            
+                                <input type="text" class="input " name="name" placeholder="Ваше имя" required>
+                                <input type="text" class="input " name="phone" placeholder="Ваш телефон" required>
+                                <input type="email" class="input" name="email" placeholder="E-mail" required>
+                                <input type="text" class="input" name="theme" placeholder="Тема вопроса" required>
+
+                                <div class="faq-textarea">
+                                    <textarea name="text" class="textarea" placeholder="Вопрос"></textarea>
+                                </div>
+                                
+                                
+                                
+                                
+                                <button class="button button-green w-100">
+                                    Отправить
+                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 3L17 7L13 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M1 7H4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 7L15 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                        
+                                </button>
+                                
+                                
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div class="modal" data-name="faq-modal">
+
+        <button class="close-btn">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">                        
+                <path d="M40 8L8 40" stroke="#A4ACAE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M40 40L8 8" stroke="#A4ACAE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>                        
+            </svg>
+        </button>
+
+        
+            <div class="mb-4 mb-sm-6 mb-xl-10">
+                <h2 class="h2 mb-1 mb-sm-6 mb-xl-10">Не нашли нужного ответа?</h2>
+                <h3 class="h3 text-center ">Задайте свой вопрос</h3>
+            </div>
+            <div >
+                <form action="script.php" class="faq-from">
+                    
+                        <input type="text" class="input " name="name" placeholder="Ваше имя" required>
+                        <input type="text" class="input " name="phone" placeholder="Ваш телефон" required>
+                        <input type="email" class="input" name="email" placeholder="E-mail" required>
+                        <input type="text" class="input" name="theme" placeholder="Тема вопроса" required>
+
+                        <div class="faq-textarea">
+                            <textarea name="text" class="textarea" placeholder="Вопрос"></textarea>
+                        </div>
+                        
+                        
+                        
+                        
+                        <button class="button button-green w-100">
+                            Отправить
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 3L17 7L13 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1 7H4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 7L15 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                        </button>
+                        
+                        
+                    
+                </form>
+            </div>
+        
+    </div>
+    @@include('templates/auth-modal.html')
+    @@include('templates/partner-modal.html')
+    @@include('templates/thanks-modal.html')
+    @@include('templates/footer.html')
+@@include('templates/foot.html')

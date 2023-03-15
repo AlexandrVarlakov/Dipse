@@ -1,0 +1,67 @@
+.modal{
+
+    display: none;
+
+    width: 100%;
+    background: #E8F0F2;
+    border-radius: 4px;
+    padding: 24px 12px;
+    position: relative;
+
+
+    @media (min-width: $sm){
+        width: 83.333333333%;
+        padding: 48px 64px 64px;
+    }
+    @media (min-width: $lg){
+        width: 100%;
+        padding: 80px;
+    }
+
+    @media (min-width: $xxl){
+        width: 75%;
+    }
+    .h2, .h3{
+        text-align: center;
+
+        @media (min-width: $sm){
+            text-align: left;
+        }
+    }
+
+    .close-btn{
+        position: absolute;
+        right: 8px;
+        top: 8px;
+
+        @media (min-width: $sm){
+            right: 16px;
+            top: 16px;
+        }
+        @media (min-width: $lg){
+            right: 32px;
+            top: 32px;
+        }
+    }
+}
+
+
+.modal.feedback-modal{
+    width: 100%;
+    @media (min-width: $sm){
+        width: 83.333333333%;
+        
+    }
+    @media (min-width: $lg){
+        width: 100%;
+        max-width: 730px;
+    }
+
+    @media (min-width: $xxl){
+        width: 75%;
+    }   
+}
+
+.modal[data-name="auth-modal"]{
+    padding-top: 80px;
+}

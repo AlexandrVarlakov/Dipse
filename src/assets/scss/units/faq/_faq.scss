@@ -1,0 +1,138 @@
+.faq-item{
+    padding: 24px 0;
+
+    border-bottom: 1px solid $border;
+
+    @media (min-width: $lg){
+        padding: 28px 0;
+    }
+}
+
+
+.faq-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (min-width: $sm){
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+}
+
+.faq-header__text{
+    color: $blue-dark;
+    @include text-xl;
+    color: $blue-darkdark;
+    font-weight: 600;
+    margin-right: 24px;
+    @media (min-width: $sm){
+        order: 2;
+        margin-right: 0px;
+        margin-left: 24px;
+    }
+
+    @media (min-width: $lg){
+        font-size: 1.25rem;
+    }
+}
+.faq-header__arrow{
+    @media (min-width: $sm){
+        margin-top: 5px;
+        order: 1;
+    }
+}
+.faq-header.open + .faq-body{
+    height: auto;
+}
+.faq-body{
+    overflow: hidden;
+    height: 0;
+    
+}
+
+.faq-body__inner{
+    padding-top: 12px;
+
+    @media (min-width: $lg){
+        padding-top: 24px;
+    }
+}
+
+.faq-body__text{    
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.35;
+    color: #1C2527;
+
+    @media (min-width: $lg){
+        font-size: 1.25rem;
+    }
+}
+
+.faq-form-section{
+    background: #E8F0F2;
+    display: none;
+    position: relative;
+    overflow: hidden;
+
+    .section__inner{
+        position: relative;
+        z-index: 10;
+    }
+    @media (min-width: $sm){
+        display: block;
+    }
+}
+
+.faq-form-section__decor{
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(12%, 8%);
+
+    @media (min-width: $xxl){
+        right: initial;
+        left: 0;
+        top: 50%;
+        transform: translate(20%, -40%);
+        
+    }
+}
+.faq-from{
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+
+    @media (min-width: $sm){
+        grid-gap: 12px;
+    }
+
+    @media (min-width: $lg){
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 24px;
+    }
+}
+.faq-textarea{
+
+    @media (min-width: $lg){
+        grid-row: 1 / 4;
+        grid-column: 2 / 3;
+    }
+    
+    .textarea{
+        height: 160px;
+
+        @media (min-width: $sm){
+            height: 200px;
+        }
+    
+        @media (min-width: $lg){
+            height: 240px;
+        }
+    }
+    
+}
+
+

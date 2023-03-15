@@ -1,0 +1,1474 @@
+@@include('templates/head.html')
+    @@include('templates/header.html')
+    <main class="mb-lg-12 mb-sm-10 mb-8">
+        @@include('templates/breadcrumbs.html')
+        @@include('templates/hamburger-menu.html')
+        
+        @@include('templates/catalog-menu.html')
+
+
+        
+        <div class="tablet-bottom-menu">
+            <p class="big-product__price"><span class="old-price">6 800 ₽</span> 5 800 ₽</p>
+            <div class="big-product__buy-block">
+                <div class="big-product__buy-inp-container">
+                    <button class="big-product__minus">
+                        <img src="assets/img/icons/minus.svg" alt="">
+                    </button>
+                    <div class="big-product__qty-wrap">
+                        <input type="text" class="big-product__qty" value="1">
+                    </div>
+                    
+                    <button class="big-product__plus">
+                        <img src="assets/img/icons/plus.svg" alt="">
+                    </button>
+                    
+                </div>
+
+                <div class="big-product__buy-btn-container">
+                    <button class="button button-green">
+                        В корзину
+                        <img src="assets/img/icons/button-arrow.svg" alt="">
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="bottom-menu bp">
+            <div class="big-product__buy-block">
+                <div class="big-product__buy-inp-container">
+                    <button class="big-product__minus">
+                        <img src="assets/img/icons/minus.svg" alt="">
+                    </button>
+                    <div class="big-product__qty-wrap">
+                        <input type="text" class="big-product__qty" value="1">
+                    </div>
+                    
+                    <button class="big-product__plus">
+                        <img src="assets/img/icons/plus.svg" alt="">
+                    </button>
+                    
+                </div>
+
+                <div class="big-product__buy-btn-container">
+                    <button class="button button-green">
+                        В корзину
+                        <img src="assets/img/icons/button-arrow.svg" alt="">
+                    </button>
+                </div>
+
+            </div>
+            
+
+            <div class="bottom-menu__search-container ">
+                <form action="#" class="search-form" method="get">
+                    <img src="assets/img/icons/search.svg" alt="" class="search-form__icon">
+                    <input type="text" name="search" placeholder="Например, транзистор">
+                    <button class="search-form__btn">
+                        <span class="search-form__btn-text">Найти</span>
+                        
+                        <img src="assets/img/icons/button-arrow.svg" alt="" class="search-form__btn-arrow">
+                        <img src="assets/img/icons/search-big.svg" alt="" class="search-form__zoom">
+                    </button>
+                </form>
+            </div>
+            
+            <div class="bottom-menu__inner">
+                
+                <button class="user-btn mob-search-btn">
+                    <span class="user-btn__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        
+                            <path d="M14.5 25C20.299 25 25 20.299 25 14.5C25 8.70101 20.299 4 14.5 4C8.70101 4 4 8.70101 4 14.5C4 20.299 8.70101 25 14.5 25Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21.925 21.9248L28 27.9998" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            
+                        </svg>
+                    </span>                    
+                    <span class="user-btn__text">
+                        Поиск
+                    </span>
+                </button>
+        
+        
+                <a href="#" class="user-btn">
+                    <span class="user-btn__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001V9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span class="user-btn__text">
+                        Избранное
+                    </span>
+                </a>
+                <a href="#" class="user-btn">
+                    <span class="user-btn__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">                                    
+                            <path d="M23 23H8.725L5.2375 3.825C5.1967 3.59537 5.07691 3.38722 4.89887 3.23657C4.72082 3.08592 4.49572 3.00223 4.2625 3H2" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 28C11.3807 28 12.5 26.8807 12.5 25.5C12.5 24.1193 11.3807 23 10 23C8.61929 23 7.5 24.1193 7.5 25.5C7.5 26.8807 8.61929 28 10 28Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23 28C24.3807 28 25.5 26.8807 25.5 25.5C25.5 24.1193 24.3807 23 23 23C21.6193 23 20.5 24.1193 20.5 25.5C20.5 26.8807 21.6193 28 23 28Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.8125 18H23.5125C23.98 18.0014 24.433 17.838 24.7919 17.5386C25.1508 17.2391 25.3927 16.8227 25.475 16.3625L27 8H6" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>                                    
+                        </svg>
+                        <span class="user-btn__product-qty">12</span>
+                    </span>
+                    <span class="user-btn__text">
+                        Корзина
+                    </span>
+                </a>
+        
+                <button data-role="call-modal" data-target=".modal[data-name='auth-modal']" class="user-btn">
+                    <span class="user-btn__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 20C18.7614 20 21 17.7614 21 15C21 12.2386 18.7614 10 16 10C13.2386 10 11 12.2386 11 15C11 17.7614 13.2386 20 16 20Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.97461 24.9248C8.727 23.4428 9.87506 22.1981 11.2915 21.3287C12.708 20.4592 14.3376 19.999 15.9996 19.999C17.6616 19.999 19.2912 20.4592 20.7077 21.3287C22.1242 22.1981 23.2722 23.4428 24.0246 24.9248" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>                                    
+                        </svg>
+                    </span>
+                    <span class="user-btn__text">
+                        Профиль
+                    </span>
+                </button>
+            </div>
+        </div>
+
+
+        
+
+        <section class="section mb-lg-12 pb-lg-7 pb-0 mb-sm-10 mb-7">
+            <div class="section__inner">
+                <h1 class="h1 bp-product-name">FS7M0880YDTU, Контроллер off-line SMPS [TO-3P-5L-Leadsformed]</h1>
+                
+                <div class="big-product">
+                    <div class="big-product__img-block">
+                        <div class="big-product__img">
+                            <div class="product__tags">
+                                <div class="product__tag popular">популярный товар</div>
+                                <div class="product__tag sale">-20%</div>
+                            </div>
+                            <button class="product__add-favorite">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001V9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#CFD9DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+    
+                            <p class="big-product__img-note">* Изображения служат только для ознакомления,см. техническую документацию</p>
+    
+                            <div class="big-product__img-inner">
+                                <img src="assets/img/products/middle.png" alt="">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+
+                    <div class="big-product__desc-block">
+                        <div class="big-product__available">
+                            <img src="assets/img/icons/check-available.svg" class="big-product__available-icon">
+                            
+                            <p class="big-product__available-text">В наличии <span class="qty">2350 шт</span></p>
+                        </div>
+
+                        <p class="big-product__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+
+                        <div class="big-product__price-block">
+                            <p class="big-product__price"><span class="old-price">6 800 ₽</span> 5 800 ₽</p>
+                            <p class="big-product__opt-price">от 50 шт - 4 600 ₽</p>
+                            <p class="big-product__opt-price">от 500 шт - 3 600 ₽</p>
+                        </div>
+
+                        <div class="big-product__buy-block">
+                            <div class="big-product__buy-inp-container">
+                                <button class="big-product__minus">
+                                    <img src="assets/img/icons/minus.svg" alt="">
+                                </button>
+                                <div class="big-product__qty-wrap">
+                                    <input type="text" class="big-product__qty" value="1">
+                                </div>
+                                
+                                <button class="big-product__plus">
+                                    <img src="assets/img/icons/plus.svg" alt="">
+                                </button>
+                                
+                            </div>
+
+                            <div class="big-product__buy-btn-container">
+                                <button class="button button-green">
+                                    В корзину
+                                    <img src="assets/img/icons/button-arrow.svg" alt="">
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <a class="big-product__doc" href="#">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            
+                            <path d="M6 16V5C6 4.73478 6.10536 4.48043 6.29289 4.29289C6.48043 4.10536 6.73478 4 7 4H19L26 11V16" stroke="#1FA3C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19 4V11H26" stroke="#1FA3C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 25H8C8.53043 25 9.03914 24.7893 9.41421 24.4142C9.78929 24.0391 10 23.5304 10 23C10 22.4696 9.78929 21.9609 9.41421 21.5858C9.03914 21.2107 8.53043 21 8 21H6V27" stroke="#1FA3C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M27 21H23.5V27" stroke="#1FA3C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M26.5 24.5H23.5" stroke="#1FA3C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 27C16.7956 27 17.5587 26.6839 18.1213 26.1213C18.6839 25.5587 19 24.7956 19 24C19 23.2044 18.6839 22.4413 18.1213 21.8787C17.5587 21.3161 16.7956 21 16 21H14.25V27H16Z" stroke="#1FA3C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            
+                        </svg>
+                        Скачать техническую документацию в формате PDF   
+                    </a>
+
+                    <div class="big-product__about-devilery">
+                        <h3 class="h3">Доставка</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                    <div class="big-product__legend">
+                        <ul>
+                            <li>
+                                <p>Номенклатурный номер</p>
+                                1293786127
+                            </li>
+                            <li>
+                                <p>Артикул</p>
+                                FS7M0880YDTU
+                            </li>
+                            <li>
+                                <p>Страна происхождени</p>
+                                КИТАЙ
+                            </li>
+                            <li>
+                                <p>Страна происхождени</p>
+                                ON Semiconductor***
+                                <div>
+                                    <img src="assets/img/brands/1.png" alt="">
+                                </div>
+                                
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+                <div class="bp-details">
+                    <div class="bp-details__tabs-list">
+                        <div class="bp-details__tab tab active" data-target="#bp-details-sheet-1" data-family="bp-datails">                                                        
+                            Описание
+                        </div>
+
+                        <div class="bp-details__tab tab" data-target="#bp-details-sheet-2" data-family="bp-datails">
+                            Технические характеристики
+                        </div>
+                    </div>
+                    <div class="bp-details__sheets accordion">
+                        <div class="cat-sheet" id="bp-details-sheet-3">
+                            <div class="cat-sheet__title-block spoiler-header" data-target="#bp-details-sheet-content-3">
+                                
+                                    
+                                <h3 class="cat-sheet__title">Доставка</h3>
+    
+                                <img src="assets/img/icons/acc-arrow.svg" alt="" class="cat-sheet__arrow spoiler-arrow ">
+                            </div>                                
+                            <div class="cat-sheet__body spoiler-body" id="bp-details-sheet-content-3">
+                                <div class="pt-3 pt-sm-7" data-measure="">
+                                    <p class="text mb-3 mb-sm-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime explicabo exercitationem libero, inventore aut porro iste minima eligendi laboriosam aspernatur, voluptatem nulla. Inventore molestias adipisci dolorum illo exercitationem iure? Excepturi cupiditate numquam harum rem eos. Aut, esse numquam enim sit recusandae sequi, laudantium nam, magnam delectus aspernatur at laboriosam.</p>
+                                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime explicabo exercitationem libero, inventore aut porro iste minima eligendi laboriosam aspernatur, voluptatem nulla. Inventore molestias adipisci dolorum illo exercitationem iure? Excepturi cupiditate numquam harum rem eos. Aut, esse numquam enim sit recusandae sequi, laudantium nam, magnam delectus aspernatur at laboriosam.</p>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+
+
+                        <div class="cat-sheet active" id="bp-details-sheet-1">
+                            <div class="cat-sheet__title-block spoiler-header" data-target="#bp-details-sheet-content-1">
+                                
+                                    
+                                <h3 class="cat-sheet__title">Описание</h3>
+    
+                                <img src="assets/img/icons/acc-arrow.svg" alt="" class="cat-sheet__arrow spoiler-arrow ">
+                            </div>                                
+                            <div class="cat-sheet__body spoiler-body" id="bp-details-sheet-content-1">
+                                <div class="pt-3 pt-sm-7" data-measure="">
+                                    <p class="text mb-3 mb-sm-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime explicabo exercitationem libero, inventore aut porro iste minima eligendi laboriosam aspernatur, voluptatem nulla. Inventore molestias adipisci dolorum illo exercitationem iure? Excepturi cupiditate numquam harum rem eos. Aut, esse numquam enim sit recusandae sequi, laudantium nam, magnam delectus aspernatur at laboriosam.</p>
+                                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime explicabo exercitationem libero, inventore aut porro iste minima eligendi laboriosam aspernatur, voluptatem nulla. Inventore molestias adipisci dolorum illo exercitationem iure? Excepturi cupiditate numquam harum rem eos. Aut, esse numquam enim sit recusandae sequi, laudantium nam, magnam delectus aspernatur at laboriosam.</p>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="cat-sheet" id="bp-details-sheet-2">
+                            <div class="cat-sheet__title-block spoiler-header" data-target="#bp-details-sheet-content-2">
+                                                                    
+                                <h3 class="cat-sheet__title">Характеристики</h3>
+    
+                                <img src="assets/img/icons/acc-arrow.svg" alt="" class="cat-sheet__arrow spoiler-arrow">
+                            </div>                                
+                            <div class="cat-sheet__body spoiler-body" id="bp-details-sheet-content-2">
+                                <div data-measure="" class="">
+                                    <ul class="bp-char-list text pt-3 pt-sm-7 ">
+                                        <li class="bp-char-list__item">
+                                            <span class="bp-char-list__char-name">Характеристика 1</span>
+                                            <span class="bp-char-list__char-value">sdfsdfs</span>
+                                        </li>
+
+                                        <li class="bp-char-list__item">
+                                            <span class="bp-char-list__char-name">Характеристика 2</span>
+                                            <span class="bp-char-list__char-value">Значнеие 2</span>
+                                        </li>
+                                        <li class="bp-char-list__item">
+                                            <span class="bp-char-list__char-name">Характеристика 1</span>
+                                            <span class="bp-char-list__char-value">sdfsdf</span>
+                                        </li>
+
+                                        <li class="bp-char-list__item">
+                                            <span class="bp-char-list__char-name">Характеристика 2</span>
+                                            <span class="bp-char-list__char-value">Значнеие 2</span>
+                                        </li>
+                                        <li class="bp-char-list__item">
+                                            <span class="bp-char-list__char-name">Характеристика 1</span>
+                                            <span class="bp-char-list__char-value">3</span>
+                                        </li>
+
+                                        <li class="bp-char-list__item">
+                                            <span class="bp-char-list__char-name">Характеристика 2</span>
+                                            <span class="bp-char-list__char-value">Значнеие 2</span>
+                                        </li>
+                                        <li class="bp-char-list__item">
+                                            <span class="bp-char-list__char-name">Характеристика 1</span>
+                                            <span class="bp-char-list__char-value">123</span>
+                                        </li>
+
+                                        <li class="bp-char-list__item">
+                                            <span class="bp-char-list__char-name">Характеристика 2</span>
+                                            <span class="bp-char-list__char-value">Значнеие 2</span>
+                                        </li>
+                                        <li class="bp-char-list__item">
+                                            <span class="bp-char-list__char-name">Характеристика 1</span>
+                                            <span class="bp-char-list__char-value">123</span>
+                                        </li>
+
+                                        <li class="bp-char-list__item">
+                                            <span class="bp-char-list__char-name">Характеристика 2</span>
+                                            <span class="bp-char-list__char-value">Значнеие 2</span>
+                                        </li>
+                                        <li class="bp-char-list__item">
+                                            <span class="bp-char-list__char-name">Характеристика 1</span>
+                                            <span class="bp-char-list__char-value">123</span>
+                                        </li>
+
+                                        <li class="bp-char-list__item">
+                                            <span class="bp-char-list__char-name">Характеристика 2</span>
+                                            <span class="bp-char-list__char-value">Значнеие 2</span>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <!--Сопутствующие товары-->
+        <section class="section mb-lg-5 mb-sm-10 mb-7">
+            <div class="section__inner">
+
+                <h2 class="h2 mb-lg-8 mb-sm-6 mb-5">Сопутствующие товары</h2>
+
+                <div class="row">
+                    <div class="col-xxl-10 col-lg-9 col-12 pe-0">
+
+                        
+
+                        <div class="swiper slider-with-banner products-container" data-mode="tile">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <div class="product__tags">
+                                            <div class="product__tag popular">популярный товар</div>
+                                            <div class="product__tag sale">-20%</div>
+                                        </div>
+                                        
+                                        <button class="product__add-favorite">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001V9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#CFD9DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                        <a class="product__img" href="#">
+                                            <div class="product__img-inner">
+                                                <img src="assets/img/products/1.png" alt="">
+                                            </div>
+                                            
+                                        </a>
+        
+                                        <div class="product__description">
+                                            <div class="product__about">
+                                                <div class="product__available">
+                                                    <img src="assets/img/icons/check-available.svg" class="product__available-icon">
+                                                    
+                                                    <p class="product__available-text">В наличии <span class="qty">2350 шт</span></p>
+                                                </div>
+                
+                                                <p class="product__developer">Производитель</p>
+                                                <a href="#" class="product__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                            </div>
+                                            
+            
+                                            <div class="product__price-block">
+                                                
+                                                <p class="product__price"><span class="old-price">6 800 ₽</span>5 800 ₽</p>
+                                                <p class="product__opt-price">от 50 шт - 4 600 ₽</p>
+                                                <p class="product__opt-price">от 500 шт - 3 600 ₽</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__buy-block">
+                                            <div class="product__buy-inp-container">
+                                                <button class="product__minus">
+                                                    <img src="assets/img/icons/minus.svg" alt="">
+                                                </button>
+                                                <div class="product__qty-wrap">
+                                                    <input type="text" class="product__qty" value="1">
+                                                </div>
+                                                
+                                                <button class="product__plus">
+                                                    <img src="assets/img/icons/plus.svg" alt="">
+                                                </button>
+                                                
+                                            </div>
+                                            <div class="product__buy-btn-container">
+                                                <button class="button button-green">
+                                                    В корзину
+                                                    <img src="assets/img/icons/button-arrow.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+        
+                                <div class="swiper-slide">
+                                    <div class="product favorite">
+                                        <div class="product__tags">
+                                            <div class="product__tag best">лучшее предложение</div>
+                                        </div>
+                                        <button class="product__add-favorite">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001V9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#CFD9DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                        <a class="product__img" href="#">
+                                            <div class="product__img-inner">
+                                                <img src="assets/img/products/2.png" alt="">
+                                            </div>
+                                            
+                                        </a>
+                                        <div class="product__description">
+                                            <div class="product__about">
+                                                <div class="product__available">
+                                                    <img src="assets/img/icons/check-available.svg" class="product__available-icon">
+                                                    
+                                                    <p class="product__available-text">В наличии <span class="qty">2350 шт</span></p>
+                                                </div>
+                
+                                                <p class="product__developer">Производитель</p>
+                                                <a href="#" class="product__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                            </div>
+                                            
+            
+                                            <div class="product__price-block">
+                                                
+                                                <p class="product__price">5 800 ₽</p>
+                                                <p class="product__opt-price">от 50 шт - 4 600 ₽</p>
+                                                <p class="product__opt-price">от 500 шт - 3 600 ₽</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__buy-block">
+                                            <div class="product__buy-inp-container">
+                                                <button class="product__minus">
+                                                    <img src="assets/img/icons/minus.svg" alt="">
+                                                </button>
+                                                <div class="product__qty-wrap">
+                                                    <input type="text" class="product__qty" value="1">
+                                                </div>
+                                                
+                                                <button class="product__plus">
+                                                    <img src="assets/img/icons/plus.svg" alt="">
+                                                </button>
+                                                
+                                            </div>
+                                            <div class="product__buy-btn-container">
+                                                <button class="button button-green">
+                                                    В корзину
+                                                    <img src="assets/img/icons/button-arrow.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                
+        
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <div class="product__tags">
+                                            <div class="product__tag hit">хит продаж</div>
+                                        </div>
+                                        <button class="product__add-favorite">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001V9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#CFD9DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                        <a class="product__img" href="#">
+                                            <div class="product__img-inner">
+                                                <img src="assets/img/products/3.png" alt="">
+                                            </div>
+                                            
+                                        </a>
+                                        <div class="product__description">
+                                            <div class="product__about">
+                                                <div class="product__available">
+                                                    <img src="assets/img/icons/check-available.svg" class="product__available-icon">
+                                                    
+                                                    <p class="product__available-text">В наличии <span class="qty">2350 шт</span></p>
+                                                </div>
+                
+                                                <p class="product__developer">Производитель</p>
+                                                <a href="#" class="product__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                            </div>
+                                            
+            
+                                            <div class="product__price-block">
+                                                
+                                                <p class="product__price">5 800 ₽</p>
+                                                <p class="product__opt-price">от 50 шт - 4 600 ₽</p>
+                                                <p class="product__opt-price">от 500 шт - 3 600 ₽</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__buy-block">
+                                            <div class="product__buy-inp-container">
+                                                <button class="product__minus">
+                                                    <img src="assets/img/icons/minus.svg" alt="">
+                                                </button>
+                                                <div class="product__qty-wrap">
+                                                    <input type="text" class="product__qty" value="1">
+                                                </div>
+                                                
+                                                <button class="product__plus">
+                                                    <img src="assets/img/icons/plus.svg" alt="">
+                                                </button>
+                                                
+                                            </div>
+                                            <div class="product__buy-btn-container">
+                                                <button class="button button-green">
+                                                    В корзину
+                                                    <img src="assets/img/icons/button-arrow.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <div class="product__tags">
+                                            <div class="product__tag popular">популярный товар</div>
+                                        </div>
+                                        <button class="product__add-favorite">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001V9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#CFD9DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                        <a class="product__img" href="#">
+                                            <div class="product__img-inner">
+                                                <img src="assets/img/products/4.png" alt="">
+                                            </div>
+                                            
+                                        </a>
+                                        <div class="product__description">
+                                            <div class="product__about">
+                                                <div class="product__available">
+                                                    <img src="assets/img/icons/check-available.svg" class="product__available-icon">
+                                                    
+                                                    <p class="product__available-text">В наличии <span class="qty">2350 шт</span></p>
+                                                </div>
+                
+                                                <p class="product__developer">Производитель</p>
+                                                <a href="#" class="product__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                            </div>
+                                            
+            
+                                            <div class="product__price-block">
+                                                
+                                                <p class="product__price">5 800 ₽</p>
+                                                <p class="product__opt-price">от 50 шт - 4 600 ₽</p>
+                                                <p class="product__opt-price">от 500 шт - 3 600 ₽</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__buy-block">
+                                            <div class="product__buy-inp-container">
+                                                <button class="product__minus">
+                                                    <img src="assets/img/icons/minus.svg" alt="">
+                                                </button>
+                                                <div class="product__qty-wrap">
+                                                    <input type="text" class="product__qty" value="1">
+                                                </div>
+                                                
+                                                <button class="product__plus">
+                                                    <img src="assets/img/icons/plus.svg" alt="">
+                                                </button>
+                                                
+                                            </div>
+                                            <div class="product__buy-btn-container">
+                                                <button class="button button-green">
+                                                    В корзину
+                                                    <img src="assets/img/icons/button-arrow.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <div class="product__tags">
+                                            <div class="product__tag popular">популярный товар</div>
+                                        </div>
+                                        <button class="product__add-favorite">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001V9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#CFD9DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                        <a class="product__img" href="#">
+                                            <div class="product__img-inner">
+                                                <img src="assets/img/products/1.png" alt="">
+                                            </div>
+                                            
+                                        </a>
+        
+                                        <div class="product__description">
+                                            <div class="product__about">
+                                                <div class="product__available">
+                                                    <img src="assets/img/icons/check-available.svg" class="product__available-icon">
+                                                    
+                                                    <p class="product__available-text">В наличии <span class="qty">2350 шт</span></p>
+                                                </div>
+                
+                                                <p class="product__developer">Производитель</p>
+                                                <a href="#" class="product__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                            </div>
+                                            
+            
+                                            <div class="product__price-block">
+                                                
+                                                <p class="product__price">5 800 ₽</p>
+                                                <p class="product__opt-price">от 50 шт - 4 600 ₽</p>
+                                                <p class="product__opt-price">от 500 шт - 3 600 ₽</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__buy-block">
+                                            <div class="product__buy-inp-container">
+                                                <button class="product__minus">
+                                                    <img src="assets/img/icons/minus.svg" alt="">
+                                                </button>
+                                                <div class="product__qty-wrap">
+                                                    <input type="text" class="product__qty" value="1">
+                                                </div>
+                                                
+                                                <button class="product__plus">
+                                                    <img src="assets/img/icons/plus.svg" alt="">
+                                                </button>
+                                                
+                                            </div>
+                                            <div class="product__buy-btn-container">
+                                                <button class="button button-green">
+                                                    В корзину
+                                                    <img src="assets/img/icons/button-arrow.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+        
+                                <div class="swiper-slide">
+                                    <div class="product favorite">
+                                        <div class="product__tags">
+                                            <div class="product__tag best">лучшее предложение</div>
+                                        </div>
+                                        <button class="product__add-favorite">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001V9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#CFD9DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                        <a class="product__img" href="#">
+                                            <div class="product__img-inner">
+                                                <img src="assets/img/products/2.png" alt="">
+                                            </div>
+                                            
+                                        </a>
+                                        <div class="product__description">
+                                            <div class="product__about">
+                                                <div class="product__available">
+                                                    <img src="assets/img/icons/check-available.svg" class="product__available-icon">
+                                                    
+                                                    <p class="product__available-text">В наличии <span class="qty">2350 шт</span></p>
+                                                </div>
+                
+                                                <p class="product__developer">Производитель</p>
+                                                <a href="#" class="product__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                            </div>
+                                            
+            
+                                            <div class="product__price-block">
+                                                
+                                                <p class="product__price">5 800 ₽</p>
+                                                <p class="product__opt-price">от 50 шт - 4 600 ₽</p>
+                                                <p class="product__opt-price">от 500 шт - 3 600 ₽</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__buy-block">
+                                            <div class="product__buy-inp-container">
+                                                <button class="product__minus">
+                                                    <img src="assets/img/icons/minus.svg" alt="">
+                                                </button>
+                                                <div class="product__qty-wrap">
+                                                    <input type="text" class="product__qty" value="1">
+                                                </div>
+                                                
+                                                <button class="product__plus">
+                                                    <img src="assets/img/icons/plus.svg" alt="">
+                                                </button>
+                                                
+                                            </div>
+                                            <div class="product__buy-btn-container">
+                                                <button class="button button-green">
+                                                    В корзину
+                                                    <img src="assets/img/icons/button-arrow.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                
+        
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <div class="product__tags">
+                                            <div class="product__tag hit">хит продаж</div>
+                                        </div>
+                                        <button class="product__add-favorite">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001V9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#CFD9DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                        <a class="product__img" href="#">
+                                            <div class="product__img-inner">
+                                                <img src="assets/img/products/3.png" alt="">
+                                            </div>
+                                            
+                                        </a>
+                                        <div class="product__description">
+                                            <div class="product__about">
+                                                <div class="product__available">
+                                                    <img src="assets/img/icons/check-available.svg" class="product__available-icon">
+                                                    
+                                                    <p class="product__available-text">В наличии <span class="qty">2350 шт</span></p>
+                                                </div>
+                
+                                                <p class="product__developer">Производитель</p>
+                                                <a href="#" class="product__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                            </div>
+                                            
+            
+                                            <div class="product__price-block">
+                                                
+                                                <p class="product__price">5 800 ₽</p>
+                                                <p class="product__opt-price">от 50 шт - 4 600 ₽</p>
+                                                <p class="product__opt-price">от 500 шт - 3 600 ₽</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__buy-block">
+                                            <div class="product__buy-inp-container">
+                                                <button class="product__minus">
+                                                    <img src="assets/img/icons/minus.svg" alt="">
+                                                </button>
+                                                <div class="product__qty-wrap">
+                                                    <input type="text" class="product__qty" value="1">
+                                                </div>
+                                                
+                                                <button class="product__plus">
+                                                    <img src="assets/img/icons/plus.svg" alt="">
+                                                </button>
+                                                
+                                            </div>
+                                            <div class="product__buy-btn-container">
+                                                <button class="button button-green">
+                                                    В корзину
+                                                    <img src="assets/img/icons/button-arrow.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <div class="product__tags">
+                                            <div class="product__tag popular">популярный товар</div>
+                                        </div>
+                                        <button class="product__add-favorite">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001V9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#CFD9DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                        <a class="product__img" href="#">
+                                            <div class="product__img-inner">
+                                                <img src="assets/img/products/4.png" alt="">
+                                            </div>
+                                            
+                                        </a>
+                                        <div class="product__description">
+                                            <div class="product__about">
+                                                <div class="product__available">
+                                                    <img src="assets/img/icons/check-available.svg" class="product__available-icon">
+                                                    
+                                                    <p class="product__available-text">В наличии <span class="qty">2350 шт</span></p>
+                                                </div>
+                
+                                                <p class="product__developer">Производитель</p>
+                                                <a href="#" class="product__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                            </div>
+                                            
+            
+                                            <div class="product__price-block">
+                                                
+                                                <p class="product__price">5 800 ₽</p>
+                                                <p class="product__opt-price">от 50 шт - 4 600 ₽</p>
+                                                <p class="product__opt-price">от 500 шт - 3 600 ₽</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__buy-block">
+                                            <div class="product__buy-inp-container">
+                                                <button class="product__minus">
+                                                    <img src="assets/img/icons/minus.svg" alt="">
+                                                </button>
+                                                <div class="product__qty-wrap">
+                                                    <input type="text" class="product__qty" value="1">
+                                                </div>
+                                                
+                                                <button class="product__plus">
+                                                    <img src="assets/img/icons/plus.svg" alt="">
+                                                </button>
+                                                
+                                            </div>
+                                            <div class="product__buy-btn-container">
+                                                <button class="button button-green">
+                                                    В корзину
+                                                    <img src="assets/img/icons/button-arrow.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide d-lg-none">
+                                    <a class="category-banner" href="#">
+                                        <div class="category-banner__icon">
+                                            <img src="assets/img/icons/eye.svg" alt="">
+            
+                                            <img src="assets/img/icons/banner-arrow.svg" alt="" class="category-banner__arrow">
+                                        </div>  
+                                        <div class="category-banner__text-block">
+                                            <p class="category-banner__title">Больше выгодных предложений</p>
+                                            <p class="category-banner__more">Смотреть все</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-lg-3 ps-0 banner-col">
+                        <a class="category-banner" href="#">
+                            <div class="category-banner__icon">
+                                <img src="assets/img/icons/eye.svg" alt="">
+
+                                <img src="assets/img/icons/banner-arrow.svg" alt="" class="category-banner__arrow">
+                            </div>  
+                            <div class="category-banner__text-block">
+                                <p class="category-banner__title">Больше выгодных предложений</p>
+                                <p class="category-banner__more">Смотреть все</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+        <!--Сопутствующие товары-->
+
+        <!--Рекомендованные товары-->
+        <section class="section mb-lg-5 mb-sm-10 mb-7">
+            <div class="section__inner">
+
+                <h2 class="h2 mb-lg-8 mb-sm-6 mb-5">Рекомендованные товары</h2>
+
+                <div class="row">
+                    <div class="col-xxl-10 col-lg-9 col-12 pe-0">
+
+                        
+
+                        <div class="swiper slider-with-banner products-container" data-mode="tile">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <div class="product__tags">
+                                            <div class="product__tag popular">популярный товар</div>
+                                            <div class="product__tag sale">-20%</div>
+                                        </div>
+                                        
+                                        <button class="product__add-favorite">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001V9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#CFD9DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                        <a class="product__img" href="#">
+                                            <div class="product__img-inner">
+                                                <img src="assets/img/products/1.png" alt="">
+                                            </div>
+                                            
+                                        </a>
+        
+                                        <div class="product__description">
+                                            <div class="product__about">
+                                                <div class="product__available">
+                                                    <img src="assets/img/icons/check-available.svg" class="product__available-icon">
+                                                    
+                                                    <p class="product__available-text">В наличии <span class="qty">2350 шт</span></p>
+                                                </div>
+                
+                                                <p class="product__developer">Производитель</p>
+                                                <a href="#" class="product__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                            </div>
+                                            
+            
+                                            <div class="product__price-block">
+                                                
+                                                <p class="product__price"><span class="old-price">6 800 ₽</span>5 800 ₽</p>
+                                                <p class="product__opt-price">от 50 шт - 4 600 ₽</p>
+                                                <p class="product__opt-price">от 500 шт - 3 600 ₽</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__buy-block">
+                                            <div class="product__buy-inp-container">
+                                                <button class="product__minus">
+                                                    <img src="assets/img/icons/minus.svg" alt="">
+                                                </button>
+                                                <div class="product__qty-wrap">
+                                                    <input type="text" class="product__qty" value="1">
+                                                </div>
+                                                
+                                                <button class="product__plus">
+                                                    <img src="assets/img/icons/plus.svg" alt="">
+                                                </button>
+                                                
+                                            </div>
+                                            <div class="product__buy-btn-container">
+                                                <button class="button button-green">
+                                                    В корзину
+                                                    <img src="assets/img/icons/button-arrow.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+        
+                                <div class="swiper-slide">
+                                    <div class="product favorite">
+                                        <div class="product__tags">
+                                            <div class="product__tag best">лучшее предложение</div>
+                                        </div>
+                                        <button class="product__add-favorite">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001V9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#CFD9DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                        <a class="product__img" href="#">
+                                            <div class="product__img-inner">
+                                                <img src="assets/img/products/2.png" alt="">
+                                            </div>
+                                            
+                                        </a>
+                                        <div class="product__description">
+                                            <div class="product__about">
+                                                <div class="product__available">
+                                                    <img src="assets/img/icons/check-available.svg" class="product__available-icon">
+                                                    
+                                                    <p class="product__available-text">В наличии <span class="qty">2350 шт</span></p>
+                                                </div>
+                
+                                                <p class="product__developer">Производитель</p>
+                                                <a href="#" class="product__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                            </div>
+                                            
+            
+                                            <div class="product__price-block">
+                                                
+                                                <p class="product__price">5 800 ₽</p>
+                                                <p class="product__opt-price">от 50 шт - 4 600 ₽</p>
+                                                <p class="product__opt-price">от 500 шт - 3 600 ₽</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__buy-block">
+                                            <div class="product__buy-inp-container">
+                                                <button class="product__minus">
+                                                    <img src="assets/img/icons/minus.svg" alt="">
+                                                </button>
+                                                <div class="product__qty-wrap">
+                                                    <input type="text" class="product__qty" value="1">
+                                                </div>
+                                                
+                                                <button class="product__plus">
+                                                    <img src="assets/img/icons/plus.svg" alt="">
+                                                </button>
+                                                
+                                            </div>
+                                            <div class="product__buy-btn-container">
+                                                <button class="button button-green">
+                                                    В корзину
+                                                    <img src="assets/img/icons/button-arrow.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                
+        
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <div class="product__tags">
+                                            <div class="product__tag hit">хит продаж</div>
+                                        </div>
+                                        <button class="product__add-favorite">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001V9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#CFD9DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                        <a class="product__img" href="#">
+                                            <div class="product__img-inner">
+                                                <img src="assets/img/products/3.png" alt="">
+                                            </div>
+                                            
+                                        </a>
+                                        <div class="product__description">
+                                            <div class="product__about">
+                                                <div class="product__available">
+                                                    <img src="assets/img/icons/check-available.svg" class="product__available-icon">
+                                                    
+                                                    <p class="product__available-text">В наличии <span class="qty">2350 шт</span></p>
+                                                </div>
+                
+                                                <p class="product__developer">Производитель</p>
+                                                <a href="#" class="product__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                            </div>
+                                            
+            
+                                            <div class="product__price-block">
+                                                
+                                                <p class="product__price">5 800 ₽</p>
+                                                <p class="product__opt-price">от 50 шт - 4 600 ₽</p>
+                                                <p class="product__opt-price">от 500 шт - 3 600 ₽</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__buy-block">
+                                            <div class="product__buy-inp-container">
+                                                <button class="product__minus">
+                                                    <img src="assets/img/icons/minus.svg" alt="">
+                                                </button>
+                                                <div class="product__qty-wrap">
+                                                    <input type="text" class="product__qty" value="1">
+                                                </div>
+                                                
+                                                <button class="product__plus">
+                                                    <img src="assets/img/icons/plus.svg" alt="">
+                                                </button>
+                                                
+                                            </div>
+                                            <div class="product__buy-btn-container">
+                                                <button class="button button-green">
+                                                    В корзину
+                                                    <img src="assets/img/icons/button-arrow.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <div class="product__tags">
+                                            <div class="product__tag popular">популярный товар</div>
+                                        </div>
+                                        <button class="product__add-favorite">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001V9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#CFD9DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                        <a class="product__img" href="#">
+                                            <div class="product__img-inner">
+                                                <img src="assets/img/products/4.png" alt="">
+                                            </div>
+                                            
+                                        </a>
+                                        <div class="product__description">
+                                            <div class="product__about">
+                                                <div class="product__available">
+                                                    <img src="assets/img/icons/check-available.svg" class="product__available-icon">
+                                                    
+                                                    <p class="product__available-text">В наличии <span class="qty">2350 шт</span></p>
+                                                </div>
+                
+                                                <p class="product__developer">Производитель</p>
+                                                <a href="#" class="product__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                            </div>
+                                            
+            
+                                            <div class="product__price-block">
+                                                
+                                                <p class="product__price">5 800 ₽</p>
+                                                <p class="product__opt-price">от 50 шт - 4 600 ₽</p>
+                                                <p class="product__opt-price">от 500 шт - 3 600 ₽</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__buy-block">
+                                            <div class="product__buy-inp-container">
+                                                <button class="product__minus">
+                                                    <img src="assets/img/icons/minus.svg" alt="">
+                                                </button>
+                                                <div class="product__qty-wrap">
+                                                    <input type="text" class="product__qty" value="1">
+                                                </div>
+                                                
+                                                <button class="product__plus">
+                                                    <img src="assets/img/icons/plus.svg" alt="">
+                                                </button>
+                                                
+                                            </div>
+                                            <div class="product__buy-btn-container">
+                                                <button class="button button-green">
+                                                    В корзину
+                                                    <img src="assets/img/icons/button-arrow.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <div class="product__tags">
+                                            <div class="product__tag popular">популярный товар</div>
+                                        </div>
+                                        <button class="product__add-favorite">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001V9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#CFD9DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                        <a class="product__img" href="#">
+                                            <div class="product__img-inner">
+                                                <img src="assets/img/products/1.png" alt="">
+                                            </div>
+                                            
+                                        </a>
+        
+                                        <div class="product__description">
+                                            <div class="product__about">
+                                                <div class="product__available">
+                                                    <img src="assets/img/icons/check-available.svg" class="product__available-icon">
+                                                    
+                                                    <p class="product__available-text">В наличии <span class="qty">2350 шт</span></p>
+                                                </div>
+                
+                                                <p class="product__developer">Производитель</p>
+                                                <a href="#" class="product__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                            </div>
+                                            
+            
+                                            <div class="product__price-block">
+                                                
+                                                <p class="product__price">5 800 ₽</p>
+                                                <p class="product__opt-price">от 50 шт - 4 600 ₽</p>
+                                                <p class="product__opt-price">от 500 шт - 3 600 ₽</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__buy-block">
+                                            <div class="product__buy-inp-container">
+                                                <button class="product__minus">
+                                                    <img src="assets/img/icons/minus.svg" alt="">
+                                                </button>
+                                                <div class="product__qty-wrap">
+                                                    <input type="text" class="product__qty" value="1">
+                                                </div>
+                                                
+                                                <button class="product__plus">
+                                                    <img src="assets/img/icons/plus.svg" alt="">
+                                                </button>
+                                                
+                                            </div>
+                                            <div class="product__buy-btn-container">
+                                                <button class="button button-green">
+                                                    В корзину
+                                                    <img src="assets/img/icons/button-arrow.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+        
+                                <div class="swiper-slide">
+                                    <div class="product favorite">
+                                        <div class="product__tags">
+                                            <div class="product__tag best">лучшее предложение</div>
+                                        </div>
+                                        <button class="product__add-favorite">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001V9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#CFD9DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                        <a class="product__img" href="#">
+                                            <div class="product__img-inner">
+                                                <img src="assets/img/products/2.png" alt="">
+                                            </div>
+                                            
+                                        </a>
+                                        <div class="product__description">
+                                            <div class="product__about">
+                                                <div class="product__available">
+                                                    <img src="assets/img/icons/check-available.svg" class="product__available-icon">
+                                                    
+                                                    <p class="product__available-text">В наличии <span class="qty">2350 шт</span></p>
+                                                </div>
+                
+                                                <p class="product__developer">Производитель</p>
+                                                <a href="#" class="product__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                            </div>
+                                            
+            
+                                            <div class="product__price-block">
+                                                
+                                                <p class="product__price">5 800 ₽</p>
+                                                <p class="product__opt-price">от 50 шт - 4 600 ₽</p>
+                                                <p class="product__opt-price">от 500 шт - 3 600 ₽</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__buy-block">
+                                            <div class="product__buy-inp-container">
+                                                <button class="product__minus">
+                                                    <img src="assets/img/icons/minus.svg" alt="">
+                                                </button>
+                                                <div class="product__qty-wrap">
+                                                    <input type="text" class="product__qty" value="1">
+                                                </div>
+                                                
+                                                <button class="product__plus">
+                                                    <img src="assets/img/icons/plus.svg" alt="">
+                                                </button>
+                                                
+                                            </div>
+                                            <div class="product__buy-btn-container">
+                                                <button class="button button-green">
+                                                    В корзину
+                                                    <img src="assets/img/icons/button-arrow.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                
+        
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <div class="product__tags">
+                                            <div class="product__tag hit">хит продаж</div>
+                                        </div>
+                                        <button class="product__add-favorite">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001V9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#CFD9DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                        <a class="product__img" href="#">
+                                            <div class="product__img-inner">
+                                                <img src="assets/img/products/3.png" alt="">
+                                            </div>
+                                            
+                                        </a>
+                                        <div class="product__description">
+                                            <div class="product__about">
+                                                <div class="product__available">
+                                                    <img src="assets/img/icons/check-available.svg" class="product__available-icon">
+                                                    
+                                                    <p class="product__available-text">В наличии <span class="qty">2350 шт</span></p>
+                                                </div>
+                
+                                                <p class="product__developer">Производитель</p>
+                                                <a href="#" class="product__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                            </div>
+                                            
+            
+                                            <div class="product__price-block">
+                                                
+                                                <p class="product__price">5 800 ₽</p>
+                                                <p class="product__opt-price">от 50 шт - 4 600 ₽</p>
+                                                <p class="product__opt-price">от 500 шт - 3 600 ₽</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__buy-block">
+                                            <div class="product__buy-inp-container">
+                                                <button class="product__minus">
+                                                    <img src="assets/img/icons/minus.svg" alt="">
+                                                </button>
+                                                <div class="product__qty-wrap">
+                                                    <input type="text" class="product__qty" value="1">
+                                                </div>
+                                                
+                                                <button class="product__plus">
+                                                    <img src="assets/img/icons/plus.svg" alt="">
+                                                </button>
+                                                
+                                            </div>
+                                            <div class="product__buy-btn-container">
+                                                <button class="button button-green">
+                                                    В корзину
+                                                    <img src="assets/img/icons/button-arrow.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <div class="product__tags">
+                                            <div class="product__tag popular">популярный товар</div>
+                                        </div>
+                                        <button class="product__add-favorite">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001V9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#CFD9DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                        <a class="product__img" href="#">
+                                            <div class="product__img-inner">
+                                                <img src="assets/img/products/4.png" alt="">
+                                            </div>
+                                            
+                                        </a>
+                                        <div class="product__description">
+                                            <div class="product__about">
+                                                <div class="product__available">
+                                                    <img src="assets/img/icons/check-available.svg" class="product__available-icon">
+                                                    
+                                                    <p class="product__available-text">В наличии <span class="qty">2350 шт</span></p>
+                                                </div>
+                
+                                                <p class="product__developer">Производитель</p>
+                                                <a href="#" class="product__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                            </div>
+                                            
+            
+                                            <div class="product__price-block">
+                                                
+                                                <p class="product__price">5 800 ₽</p>
+                                                <p class="product__opt-price">от 50 шт - 4 600 ₽</p>
+                                                <p class="product__opt-price">от 500 шт - 3 600 ₽</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__buy-block">
+                                            <div class="product__buy-inp-container">
+                                                <button class="product__minus">
+                                                    <img src="assets/img/icons/minus.svg" alt="">
+                                                </button>
+                                                <div class="product__qty-wrap">
+                                                    <input type="text" class="product__qty" value="1">
+                                                </div>
+                                                
+                                                <button class="product__plus">
+                                                    <img src="assets/img/icons/plus.svg" alt="">
+                                                </button>
+                                                
+                                            </div>
+                                            <div class="product__buy-btn-container">
+                                                <button class="button button-green">
+                                                    В корзину
+                                                    <img src="assets/img/icons/button-arrow.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide d-lg-none">
+                                    <a class="category-banner" href="#">
+                                        <div class="category-banner__icon">
+                                            <img src="assets/img/icons/eye.svg" alt="">
+            
+                                            <img src="assets/img/icons/banner-arrow.svg" alt="" class="category-banner__arrow">
+                                        </div>  
+                                        <div class="category-banner__text-block">
+                                            <p class="category-banner__title">Популярные новинки с повышенным спросом</p>
+                                            <p class="category-banner__more">Смотреть все</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-lg-3 ps-0 banner-col">
+                        <a class="category-banner" href="#">
+                            <div class="category-banner__icon">
+                                <img src="assets/img/icons/eye.svg" alt="">
+
+                                <img src="assets/img/icons/banner-arrow.svg" alt="" class="category-banner__arrow">
+                            </div>  
+                            <div class="category-banner__text-block">
+                                <p class="category-banner__title">Популярные новинки с повышенным спросом</p>
+                                <p class="category-banner__more">Смотреть все</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+        <!--Рекомендованные товары-->
+    </main>
+    @@include('templates/auth-modal.html')
+    @@include('templates/partner-modal.html')
+    @@include('templates/thanks-modal.html')
+    @@include('templates/footer.html')
+@@include('templates/foot.html')

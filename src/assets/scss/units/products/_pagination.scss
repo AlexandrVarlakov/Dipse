@@ -1,0 +1,79 @@
+.pagination{
+    display: flex;
+    
+
+    margin-top: 48px;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: $sm){
+        flex-direction: row;
+        justify-content: center;
+    }
+    @media (min-width: $lg){
+        justify-content: flex-end;
+    }
+}
+.pagination__navs{
+    display: flex;
+    align-items: center;
+}
+.pagination__item{
+    width: 72px;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: $sm){
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.pagination__link{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.35;
+    color: #1C2527;
+    transition: 300ms;
+
+}
+
+.pagination__fraction{
+    background-color: $gray-light;
+
+    &:hover{
+        background-color: $blue;
+        color: #fff;
+    }
+}
+
+.pagination__nav{
+    background-color: $black;
+
+    &:hover{
+        background-color: $blue;
+        color: #fff;
+    }
+}
+
+.pagination__fraction.active{
+    background-color: transparent;
+    border: 2px solid $black;
+    width: 100%;
+    height: 100%;
+    color: #1C2527;
+    &:hover{
+        color: #1C2527;
+        background-color: transparent;
+    }
+}
+
+.pagination__fractions-list{
+    display: flex;
+}

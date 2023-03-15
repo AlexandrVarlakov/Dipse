@@ -1,0 +1,370 @@
+@@include('templates/head.html')
+    @@include('templates/header.html')
+    <main class="mb-lg-12 mb-sm-10 mb-8">
+        @@include('templates/breadcrumbs.html')
+        @@include('templates/hamburger-menu.html')
+        
+        @@include('templates/catalog-menu.html')
+
+
+        @@include('templates/bottom-menu.html')
+
+
+
+        <section class="section  delivery-section col-12 col-xxl-10">
+            <div class="section__inner">
+                <img src="assets/img/delivery-decoration.svg" alt="" class="delivery-decoration">
+
+                <h1 class="h1">Способы доставки</h1>
+                
+                <div class="swiped-tab-list pb-8">
+                    <div class="swiped-tab-list__inner">
+                        <ul>
+                            <li class="swiped-tab-list__tab tab active" data-target="#bp-details-sheet-1" data-family="bp-datails">Пункты выдачи</li>
+                            <li class="swiped-tab-list__tab tab " data-target="#bp-details-sheet-2" data-family="bp-datails">Почта России</li>
+                            <li class="swiped-tab-list__tab tab " data-target="#bp-details-sheet-3" data-family="bp-datails">Курьер</li>
+                            <li class="swiped-tab-list__tab tab" data-target="#bp-details-sheet-4" data-family="bp-datails">Транспортные компании</li>
+                        </ul>
+                        
+                    </div>
+                    
+                </div>
+                <div class="accordion">
+                    
+
+                    <div class="cat-sheet active" id="bp-details-sheet-1">
+                        <div class="cat-sheet__title-block spoiler-header" data-target="#bp-details-sheet-content-1">
+                            
+                                
+                            <h3 class="cat-sheet__title ">Пункты выдачи</h3>
+
+                            <img src="assets/img/icons/acc-arrow.svg" alt="" class="cat-sheet__arrow spoiler-arrow ">
+                        </div>                                
+                        <div class="cat-sheet__body spoiler-body" id="bp-details-sheet-content-1">
+                            <div class="pt-3 pt-sm-0" data-measure="">
+                                <p class="h2 mb-4 mb-sm-7 d-sm-none">Пункты выдачи</p>
+                                <p class="lg-text mb-4 mb-sm-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime explicabo exercitationem libero, inventore aut porro iste minima eligendi laboriosam aspernatur, voluptatem nulla. Inventore molestias adipisci dolorum illo exercitationem iure? Excepturi cupiditate numquam harum rem eos. Aut, esse numquam enim sit recusandae sequi, laudantium nam, magnam delectus aspernatur at laboriosam.</p>
+                                <p class="lg-text mb-4 mb-sm-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime explicabo exercitationem libero, inventore aut porro iste minima eligendi laboriosam aspernatur, voluptatem nulla. Inventore molestias adipisci dolorum illo exercitationem iure? Excepturi cupiditate numquam harum rem eos. Aut, esse numquam enim sit recusandae sequi, laudantium nam, magnam delectus aspernatur at laboriosam.</p>
+
+
+                                <div class="delivery-form-controls">
+
+                                    <div class="row mb-7">
+                                        <div class="col-12 col-sm-8 col-xl-9 ">
+                                            <label for="city" class="text text-black mb-3">Город / населённый пункт:</label>
+                                            <div class="select-wrap">
+                                                <img src="assets/img/icons/select-arrow.svg" alt="">
+                                                <select name="" id="city" class="h-64 w-100" >
+                                                    <option value="-1" disabled>Город</option>
+                                                    <option value="">Москва</option>
+                                                    <option value="">Ленинград</option>
+                                                    <option value="">Ярославль</option>
+                                                </select>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-7">
+
+                                        <div class="col-12 col-sm-8 col-xl-9 mb-4 mb-sm-0">
+                                            <label for="city" class="text text-black mb-3">Выберите пункт выдачи, где вам удобнее получить заказ</label>
+                                            <div class="select-wrap">
+                                                <img src="assets/img/icons/select-arrow.svg" alt="">
+                                                <select name="" id="city" class="h-64 w-100" >
+                                                    <option value="-1" disabled>Пункт выдачи</option>
+                                                    <option value="">Пункт выдачи 1</option>
+                                                    <option value="">Пункт выдачи 3</option>
+                                                    <option value="">Пункт выдачи 3</option>
+                                                </select>
+                                            </div>
+                                            
+                                        
+                                        </div>
+                                        <div class="col-12 col-sm-4 col-xl-3 ">
+                                            
+                                                <div class="select-location">
+                                                    <button class="select-location__btn">
+                                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">                                                        
+                                                            <path d="M16 17C18.2091 17 20 15.2091 20 13C20 10.7909 18.2091 9 16 9C13.7909 9 12 10.7909 12 13C12 15.2091 13.7909 17 16 17Z" stroke="#1FA3C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M26 13C26 22 16 29 16 29C16 29 6 22 6 13C6 10.3478 7.05357 7.8043 8.92893 5.92893C10.8043 4.05357 13.3478 3 16 3C18.6522 3 21.1957 4.05357 23.0711 5.92893C24.9464 7.8043 26 10.3478 26 13V13Z" stroke="#1FA3C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>                                                        
+                                                        </svg>
+                                                        Посмотреть на карте  
+                                                    </button>
+                                                
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="del-company-logo mb-3">
+                                    <img src="assets/img/delivery-logo/cdek.png" alt="">
+                                </div>
+
+                                <p class="lg-text mb-4 mb-sm-7">Получение заказа курьерами или в пунктах выдачи заказов компании СДЭК. Служба доставки СДЭК имеет более 4000 пунктов выдачи заказов в более чем 900 городах России.Данный способ доставки имеет ограничения по весу до 25 кг, и сумма трёх сторон посылки не должна превышать 150 см.Возможны другие ограничения введённые компанией СДЭК, касающиеся транспортировки опасных грузов: аккумуляторы, жидкие и прочие химические реактивы в аэрозолях и бутылках, сжатый газ под давлением (подробности уточняйте у менеджеров).</p>
+
+                                <div class="del-company-logo mb-3">
+                                    <img src="assets/img/delivery-logo/boxberry.png" alt="">
+                                </div>
+
+                                <p class="lg-text ">Получение заказов в пунктах выдачи заказов Boxberry – это более 4200 отделений в 660 городах РФ.Наибольший вес одного места в заказе, не должен превышать 15 кг. Длина наибольшей стороны не должна превышать 1.2 м.</p>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="cat-sheet" id="bp-details-sheet-2">
+                        <div class="cat-sheet__title-block spoiler-header" data-target="#bp-details-sheet-content-2">
+                                                                
+                            <h3 class="cat-sheet__title">Почта России</h3>
+
+                            <img src="assets/img/icons/acc-arrow.svg" alt="" class="cat-sheet__arrow spoiler-arrow">
+                        </div>                                
+                        <div class="cat-sheet__body spoiler-body" id="bp-details-sheet-content-2">
+                            <div class="pt-3 pt-sm-0" data-measure="">
+                                <p class="h2 mb-4 mb-sm-7 d-sm-none">Почта России</p>
+                                <p class="lg-text mb-4 mb-sm-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime explicabo exercitationem libero, inventore aut porro iste minima eligendi laboriosam aspernatur, voluptatem nulla. Inventore molestias adipisci dolorum illo exercitationem iure? Excepturi cupiditate numquam harum rem eos. Aut, esse numquam enim sit recusandae sequi, laudantium nam, magnam delectus aspernatur at laboriosam.</p>
+                                <p class="lg-text mb-4 mb-sm-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime explicabo exercitationem libero, inventore aut porro iste minima eligendi laboriosam aspernatur, voluptatem nulla. Inventore molestias adipisci dolorum illo exercitationem iure? Excepturi cupiditate numquam harum rem eos. Aut, esse numquam enim sit recusandae sequi, laudantium nam, magnam delectus aspernatur at laboriosam.</p>
+
+
+                                <div class="delivery-form-controls">
+
+                                    <div class="row mb-7">
+                                        <div class="col-12 col-sm-8 col-xl-9 ">
+                                            <label for="city" class="text text-black mb-3">Город / населённый пункт:</label>
+                                            <div class="select-wrap">
+                                                <img src="assets/img/icons/select-arrow.svg" alt="">
+                                                <select name="" id="city" class="h-64 w-100" >
+                                                    <option value="-1" disabled>Город</option>
+                                                    <option value="">Москва</option>
+                                                    <option value="">Ленинград</option>
+                                                    <option value="">Ярославль</option>
+                                                </select>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-7">
+
+                                        <div class="col-12 col-sm-8 col-xl-9 mb-4 mb-sm-0">
+                                            <label for="city" class="text text-black mb-3">Выберите пункт выдачи, где вам удобнее получить заказ</label>
+                                            <div class="select-wrap">
+                                                <img src="assets/img/icons/select-arrow.svg" alt="">
+                                                <select name="" id="city" class="h-64 w-100" >
+                                                    <option value="-1" disabled>Пункт выдачи</option>
+                                                    <option value="">Пункт выдачи 1</option>
+                                                    <option value="">Пункт выдачи 3</option>
+                                                    <option value="">Пункт выдачи 3</option>
+                                                </select>
+                                            </div>
+                                            
+                                        
+                                        </div>
+                                        <div class="col-12 col-sm-4 col-xl-3 ">
+                                            
+                                                <div class="select-location">
+                                                    <button class="select-location__btn">
+                                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">                                                        
+                                                            <path d="M16 17C18.2091 17 20 15.2091 20 13C20 10.7909 18.2091 9 16 9C13.7909 9 12 10.7909 12 13C12 15.2091 13.7909 17 16 17Z" stroke="#1FA3C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M26 13C26 22 16 29 16 29C16 29 6 22 6 13C6 10.3478 7.05357 7.8043 8.92893 5.92893C10.8043 4.05357 13.3478 3 16 3C18.6522 3 21.1957 4.05357 23.0711 5.92893C24.9464 7.8043 26 10.3478 26 13V13Z" stroke="#1FA3C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>                                                        
+                                                        </svg>
+                                                        Посмотреть на карте  
+                                                    </button>
+                                                
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="del-company-logo mb-3">
+                                    <img src="assets/img/delivery-logo/cdek.png" alt="">
+                                </div>
+
+                                <p class="lg-text mb-4 mb-sm-7">Получение заказа курьерами или в пунктах выдачи заказов компании СДЭК. Служба доставки СДЭК имеет более 4000 пунктов выдачи заказов в более чем 900 городах России.Данный способ доставки имеет ограничения по весу до 25 кг, и сумма трёх сторон посылки не должна превышать 150 см.Возможны другие ограничения введённые компанией СДЭК, касающиеся транспортировки опасных грузов: аккумуляторы, жидкие и прочие химические реактивы в аэрозолях и бутылках, сжатый газ под давлением (подробности уточняйте у менеджеров).</p>
+
+                                <div class="del-company-logo mb-3">
+                                    <img src="assets/img/delivery-logo/boxberry.png" alt="">
+                                </div>
+
+                                <p class="lg-text ">Получение заказов в пунктах выдачи заказов Boxberry – это более 4200 отделений в 660 городах РФ.Наибольший вес одного места в заказе, не должен превышать 15 кг. Длина наибольшей стороны не должна превышать 1.2 м.</p>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="cat-sheet" id="bp-details-sheet-3">
+                        <div class="cat-sheet__title-block spoiler-header" data-target="#bp-details-sheet-content-3">
+                                                                
+                            <h3 class="cat-sheet__title">Курьер</h3>
+
+                            <img src="assets/img/icons/acc-arrow.svg" alt="" class="cat-sheet__arrow spoiler-arrow">
+                        </div>                                
+                        <div class="cat-sheet__body spoiler-body" id="bp-details-sheet-content-3">
+                            <div class="pt-3 pt-sm-0" data-measure="">
+                                <p class="h2 mb-4 mb-sm-7 d-sm-none">Курьер</p>
+                                <p class="lg-text mb-4 mb-sm-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime explicabo exercitationem libero, inventore aut porro iste minima eligendi laboriosam aspernatur, voluptatem nulla. Inventore molestias adipisci dolorum illo exercitationem iure? Excepturi cupiditate numquam harum rem eos. Aut, esse numquam enim sit recusandae sequi, laudantium nam, magnam delectus aspernatur at laboriosam.</p>
+                                <p class="lg-text mb-4 mb-sm-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime explicabo exercitationem libero, inventore aut porro iste minima eligendi laboriosam aspernatur, voluptatem nulla. Inventore molestias adipisci dolorum illo exercitationem iure? Excepturi cupiditate numquam harum rem eos. Aut, esse numquam enim sit recusandae sequi, laudantium nam, magnam delectus aspernatur at laboriosam.</p>
+
+
+                                <div class="delivery-form-controls">
+
+                                    <div class="row mb-7">
+                                        <div class="col-12 col-sm-8 col-xl-9 ">
+                                            <label for="city" class="text text-black mb-3">Город / населённый пункт:</label>
+                                            <div class="select-wrap">
+                                                <img src="assets/img/icons/select-arrow.svg" alt="">
+                                                <select name="" id="city" class="h-64 w-100" >
+                                                    <option value="-1" disabled>Город</option>
+                                                    <option value="">Москва</option>
+                                                    <option value="">Ленинград</option>
+                                                    <option value="">Ярославль</option>
+                                                </select>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-7">
+
+                                        <div class="col-12 col-sm-8 col-xl-9 mb-4 mb-sm-0">
+                                            <label for="city" class="text text-black mb-3">Выберите пункт выдачи, где вам удобнее получить заказ</label>
+                                            <div class="select-wrap">
+                                                <img src="assets/img/icons/select-arrow.svg" alt="">
+                                                <select name="" id="city" class="h-64 w-100" >
+                                                    <option value="-1" disabled>Пункт выдачи</option>
+                                                    <option value="">Пункт выдачи 1</option>
+                                                    <option value="">Пункт выдачи 3</option>
+                                                    <option value="">Пункт выдачи 3</option>
+                                                </select>
+                                            </div>
+                                            
+                                        
+                                        </div>
+                                        <div class="col-12 col-sm-4 col-xl-3 ">
+                                            
+                                                <div class="select-location">
+                                                    <button class="select-location__btn">
+                                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">                                                        
+                                                            <path d="M16 17C18.2091 17 20 15.2091 20 13C20 10.7909 18.2091 9 16 9C13.7909 9 12 10.7909 12 13C12 15.2091 13.7909 17 16 17Z" stroke="#1FA3C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M26 13C26 22 16 29 16 29C16 29 6 22 6 13C6 10.3478 7.05357 7.8043 8.92893 5.92893C10.8043 4.05357 13.3478 3 16 3C18.6522 3 21.1957 4.05357 23.0711 5.92893C24.9464 7.8043 26 10.3478 26 13V13Z" stroke="#1FA3C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>                                                        
+                                                        </svg>
+                                                        Посмотреть на карте  
+                                                    </button>
+                                                
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="del-company-logo mb-3">
+                                    <img src="assets/img/delivery-logo/cdek.png" alt="">
+                                </div>
+
+                                <p class="lg-text mb-4 mb-sm-7">Получение заказа курьерами или в пунктах выдачи заказов компании СДЭК. Служба доставки СДЭК имеет более 4000 пунктов выдачи заказов в более чем 900 городах России.Данный способ доставки имеет ограничения по весу до 25 кг, и сумма трёх сторон посылки не должна превышать 150 см.Возможны другие ограничения введённые компанией СДЭК, касающиеся транспортировки опасных грузов: аккумуляторы, жидкие и прочие химические реактивы в аэрозолях и бутылках, сжатый газ под давлением (подробности уточняйте у менеджеров).</p>
+
+                                <div class="del-company-logo mb-3">
+                                    <img src="assets/img/delivery-logo/boxberry.png" alt="">
+                                </div>
+
+                                <p class="lg-text ">Получение заказов в пунктах выдачи заказов Boxberry – это более 4200 отделений в 660 городах РФ.Наибольший вес одного места в заказе, не должен превышать 15 кг. Длина наибольшей стороны не должна превышать 1.2 м.</p>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="cat-sheet" id="bp-details-sheet-4">
+                        <div class="cat-sheet__title-block spoiler-header" data-target="#bp-details-sheet-content-4">
+                                                                
+                            <h3 class="cat-sheet__title">Транспортные компании</h3>
+
+                            <img src="assets/img/icons/acc-arrow.svg" alt="" class="cat-sheet__arrow spoiler-arrow">
+                        </div>                                
+                        <div class="cat-sheet__body spoiler-body" id="bp-details-sheet-content-4">
+                            <div class="pt-3 pt-sm-0" data-measure="">
+                                <p class="h2 mb-4 mb-sm-7 d-sm-none">Транспортные компании</p>
+                                <p class="lg-text mb-4 mb-sm-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime explicabo exercitationem libero, inventore aut porro iste minima eligendi laboriosam aspernatur, voluptatem nulla. Inventore molestias adipisci dolorum illo exercitationem iure? Excepturi cupiditate numquam harum rem eos. Aut, esse numquam enim sit recusandae sequi, laudantium nam, magnam delectus aspernatur at laboriosam.</p>
+                                <p class="lg-text mb-4 mb-sm-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime explicabo exercitationem libero, inventore aut porro iste minima eligendi laboriosam aspernatur, voluptatem nulla. Inventore molestias adipisci dolorum illo exercitationem iure? Excepturi cupiditate numquam harum rem eos. Aut, esse numquam enim sit recusandae sequi, laudantium nam, magnam delectus aspernatur at laboriosam.</p>
+
+
+                                <div class="delivery-form-controls">
+
+                                    <div class="row mb-7">
+                                        <div class="col-12 col-sm-8 col-xl-9 ">
+                                            <label for="city" class="text text-black mb-3">Город / населённый пункт:</label>
+                                            <div class="select-wrap">
+                                                <img src="assets/img/icons/select-arrow.svg" alt="">
+                                                <select name="" id="city" class="h-64 w-100" >
+                                                    <option value="-1" disabled>Город</option>
+                                                    <option value="">Москва</option>
+                                                    <option value="">Ленинград</option>
+                                                    <option value="">Ярославль</option>
+                                                </select>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-7">
+
+                                        <div class="col-12 col-sm-8 col-xl-9 mb-4 mb-sm-0">
+                                            <label for="city" class="text text-black mb-3">Выберите пункт выдачи, где вам удобнее получить заказ</label>
+                                            <div class="select-wrap">
+                                                <img src="assets/img/icons/select-arrow.svg" alt="">
+                                                <select name="" id="city" class="h-64 w-100" >
+                                                    <option value="-1" disabled>Пункт выдачи</option>
+                                                    <option value="">Пункт выдачи 1</option>
+                                                    <option value="">Пункт выдачи 3</option>
+                                                    <option value="">Пункт выдачи 3</option>
+                                                </select>
+                                            </div>
+                                            
+                                        
+                                        </div>
+                                        <div class="col-12 col-sm-4 col-xl-3 ">
+                                            
+                                                <div class="select-location">
+                                                    <button class="select-location__btn">
+                                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">                                                        
+                                                            <path d="M16 17C18.2091 17 20 15.2091 20 13C20 10.7909 18.2091 9 16 9C13.7909 9 12 10.7909 12 13C12 15.2091 13.7909 17 16 17Z" stroke="#1FA3C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M26 13C26 22 16 29 16 29C16 29 6 22 6 13C6 10.3478 7.05357 7.8043 8.92893 5.92893C10.8043 4.05357 13.3478 3 16 3C18.6522 3 21.1957 4.05357 23.0711 5.92893C24.9464 7.8043 26 10.3478 26 13V13Z" stroke="#1FA3C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>                                                        
+                                                        </svg>
+                                                        Посмотреть на карте  
+                                                    </button>
+                                                
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="del-company-logo mb-3">
+                                    <img src="assets/img/delivery-logo/cdek.png" alt="">
+                                </div>
+
+                                <p class="lg-text mb-4 mb-sm-7">Получение заказа курьерами или в пунктах выдачи заказов компании СДЭК. Служба доставки СДЭК имеет более 4000 пунктов выдачи заказов в более чем 900 городах России.Данный способ доставки имеет ограничения по весу до 25 кг, и сумма трёх сторон посылки не должна превышать 150 см.Возможны другие ограничения введённые компанией СДЭК, касающиеся транспортировки опасных грузов: аккумуляторы, жидкие и прочие химические реактивы в аэрозолях и бутылках, сжатый газ под давлением (подробности уточняйте у менеджеров).</p>
+
+                                <div class="del-company-logo mb-3">
+                                    <img src="assets/img/delivery-logo/boxberry.png" alt="">
+                                </div>
+
+                                <p class="lg-text ">Получение заказов в пунктах выдачи заказов Boxberry – это более 4200 отделений в 660 городах РФ.Наибольший вес одного места в заказе, не должен превышать 15 кг. Длина наибольшей стороны не должна превышать 1.2 м.</p>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    @@include('templates/auth-modal.html')
+    @@include('templates/partner-modal.html')
+    @@include('templates/thanks-modal.html')
+    @@include('templates/footer.html')
+@@include('templates/foot.html')

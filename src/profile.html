@@ -1,0 +1,243 @@
+@@include('templates/head.html')
+    @@include('templates/header.html')
+    <main class="mb-lg-12 mb-sm-10 mb-8 can-sticky">
+        @@include('templates/breadcrumbs.html')
+        @@include('templates/hamburger-menu.html')
+        
+        @@include('templates/catalog-menu.html')
+
+
+        @@include('templates/bottom-menu.html')
+
+        <div class="tablet-bottom-menu">
+            <ul class="profile-menu">
+                <li class="profile-menu__item">
+                    <a href="#" class="profile-menu__link text">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">                                        
+                            <path d="M21 16.622V7.37824C20.9993 7.24472 20.9634 7.11375 20.8959 6.99853C20.8284 6.88331 20.7317 6.78793 20.6156 6.72199L12.3656 2.08137C12.2545 2.01719 12.1284 1.9834 12 1.9834C11.8716 1.9834 11.7455 2.01719 11.6344 2.08137L3.38437 6.72199C3.26827 6.78793 3.1716 6.88331 3.10411 6.99853C3.03663 7.11375 3.00072 7.24472 3 7.37824V16.622C3.00072 16.7555 3.03663 16.8865 3.10411 17.0017C3.1716 17.1169 3.26827 17.2123 3.38437 17.2782L11.6344 21.9189C11.7455 21.983 11.8716 22.0168 12 22.0168C12.1284 22.0168 12.2545 21.983 12.3656 21.9189L20.6156 17.2782C20.7317 17.2123 20.8284 17.1169 20.8959 17.0017C20.9634 16.8865 20.9993 16.7555 21 16.622V16.622Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16.5938 14.2969V9.42188L7.5 4.40625" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20.8953 6.99365L12.0828 11.9999L3.10156 6.99365" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12.0844 12L12 22.0125" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Мои заказы 
+                        <img src="assets/img/icons/tab-arrow.svg" alt=""  class="profile-menu__arrow">
+                    </a>
+                </li>
+                <li class="profile-menu__item">
+                    <a href="#" class="profile-menu__link text">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">                                        
+                            <path d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.625 7.49803 3.01546 6.40585 3.72996 5.53431C4.44445 4.66277 5.43884 4.0657 6.54393 3.84468C7.64903 3.62366 8.79657 3.79235 9.79131 4.32204C10.7861 4.85174 11.5665 5.70972 12 6.75001V6.75001C12.4335 5.70972 13.2139 4.85174 14.2087 4.32204C15.2034 3.79235 16.351 3.62366 17.4561 3.84468C18.5612 4.0657 19.5555 4.66277 20.27 5.53431C20.9845 6.40585 21.375 7.49803 21.375 8.62501C21.375 15 12 20.25 12 20.25Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Избранное                                        
+                        <img src="assets/img/icons/tab-arrow.svg" alt=""  class="profile-menu__arrow">
+                    </a>
+                </li>
+                <li class="profile-menu__item">
+                    <a href="#" class="profile-menu__link text active">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 15C14.0711 15 15.75 13.3211 15.75 11.25C15.75 9.17893 14.0711 7.5 12 7.5C9.92893 7.5 8.25 9.17893 8.25 11.25C8.25 13.3211 9.92893 15 12 15Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.98047 18.6933C6.54476 17.5819 7.40581 16.6484 8.46816 15.9963C9.53052 15.3442 10.7527 14.999 11.9992 14.999C13.2457 14.999 14.4679 15.3442 15.5303 15.9963C16.5926 16.6484 17.4537 17.5819 18.018 18.6933" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Личные данные             
+                        <img src="assets/img/icons/tab-arrow.svg" alt=""  class="profile-menu__arrow">
+                    </a>
+                </li>
+                <li class="profile-menu__item">
+                    <a href="#" class="profile-menu__link text exit">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">                                    
+                            <path d="M16.3125 8.0625L20.25 12L16.3125 15.9375" stroke="#A4ACAE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.75 12H20.25" stroke="#A4ACAE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.75 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V4.5C3.75 4.30109 3.82902 4.11032 3.96967 3.96967C4.11032 3.82902 4.30109 3.75 4.5 3.75H9.75" stroke="#A4ACAE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                            
+                        Выход
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <section class="section">
+            <div class="section__inner">
+                <h1 class="h1">Личный кабинет</h1>
+                
+                <div class="profile-mob-nav">
+                    <div class="profile-mob-nav__inner">
+                        <a href="#" class="profile-mob-nav__link text">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">                                        
+                                <path d="M21 16.622V7.37824C20.9993 7.24472 20.9634 7.11375 20.8959 6.99853C20.8284 6.88331 20.7317 6.78793 20.6156 6.72199L12.3656 2.08137C12.2545 2.01719 12.1284 1.9834 12 1.9834C11.8716 1.9834 11.7455 2.01719 11.6344 2.08137L3.38437 6.72199C3.26827 6.78793 3.1716 6.88331 3.10411 6.99853C3.03663 7.11375 3.00072 7.24472 3 7.37824V16.622C3.00072 16.7555 3.03663 16.8865 3.10411 17.0017C3.1716 17.1169 3.26827 17.2123 3.38437 17.2782L11.6344 21.9189C11.7455 21.983 11.8716 22.0168 12 22.0168C12.1284 22.0168 12.2545 21.983 12.3656 21.9189L20.6156 17.2782C20.7317 17.2123 20.8284 17.1169 20.8959 17.0017C20.9634 16.8865 20.9993 16.7555 21 16.622V16.622Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.5938 14.2969V9.42188L7.5 4.40625" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20.8953 6.99365L12.0828 11.9999L3.10156 6.99365" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.0844 12L12 22.0125" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Мои заказы 
+                        </a>
+                        <a href="#" class="profile-mob-nav__link active text">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">                                        
+                                <path d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.625 7.49803 3.01546 6.40585 3.72996 5.53431C4.44445 4.66277 5.43884 4.0657 6.54393 3.84468C7.64903 3.62366 8.79657 3.79235 9.79131 4.32204C10.7861 4.85174 11.5665 5.70972 12 6.75001V6.75001C12.4335 5.70972 13.2139 4.85174 14.2087 4.32204C15.2034 3.79235 16.351 3.62366 17.4561 3.84468C18.5612 4.0657 19.5555 4.66277 20.27 5.53431C20.9845 6.40585 21.375 7.49803 21.375 8.62501C21.375 15 12 20.25 12 20.25Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Избранное                                        
+                        </a>
+                        <a href="#" class="profile-mob-nav__link  text">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 15C14.0711 15 15.75 13.3211 15.75 11.25C15.75 9.17893 14.0711 7.5 12 7.5C9.92893 7.5 8.25 9.17893 8.25 11.25C8.25 13.3211 9.92893 15 12 15Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.98047 18.6933C6.54476 17.5819 7.40581 16.6484 8.46816 15.9963C9.53052 15.3442 10.7527 14.999 11.9992 14.999C13.2457 14.999 14.4679 15.3442 15.5303 15.9963C16.5926 16.6484 17.4537 17.5819 18.018 18.6933" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Личные данные             
+                        </a>
+                        <a href="#" class="profile-mob-nav__link  text exit">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">                                    
+                                <path d="M16.3125 8.0625L20.25 12L16.3125 15.9375" stroke="#A4ACAE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.75 12H20.25" stroke="#A4ACAE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.75 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V4.5C3.75 4.30109 3.82902 4.11032 3.96967 3.96967C4.11032 3.82902 4.30109 3.75 4.5 3.75H9.75" stroke="#A4ACAE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                            Выход
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3 d-none d-lg-block">
+                        <ul class="profile-menu">
+                            <li class="profile-menu__item">
+                                <a href="#" class="profile-menu__link text">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">                                        
+                                        <path d="M21 16.622V7.37824C20.9993 7.24472 20.9634 7.11375 20.8959 6.99853C20.8284 6.88331 20.7317 6.78793 20.6156 6.72199L12.3656 2.08137C12.2545 2.01719 12.1284 1.9834 12 1.9834C11.8716 1.9834 11.7455 2.01719 11.6344 2.08137L3.38437 6.72199C3.26827 6.78793 3.1716 6.88331 3.10411 6.99853C3.03663 7.11375 3.00072 7.24472 3 7.37824V16.622C3.00072 16.7555 3.03663 16.8865 3.10411 17.0017C3.1716 17.1169 3.26827 17.2123 3.38437 17.2782L11.6344 21.9189C11.7455 21.983 11.8716 22.0168 12 22.0168C12.1284 22.0168 12.2545 21.983 12.3656 21.9189L20.6156 17.2782C20.7317 17.2123 20.8284 17.1169 20.8959 17.0017C20.9634 16.8865 20.9993 16.7555 21 16.622V16.622Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16.5938 14.2969V9.42188L7.5 4.40625" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M20.8953 6.99365L12.0828 11.9999L3.10156 6.99365" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12.0844 12L12 22.0125" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Мои заказы 
+                                    <img src="assets/img/icons/tab-arrow.svg" alt=""  class="profile-menu__arrow">
+                                </a>
+                            </li>
+                            <li class="profile-menu__item">
+                                <a href="#" class="profile-menu__link text">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">                                        
+                                        <path d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.625 7.49803 3.01546 6.40585 3.72996 5.53431C4.44445 4.66277 5.43884 4.0657 6.54393 3.84468C7.64903 3.62366 8.79657 3.79235 9.79131 4.32204C10.7861 4.85174 11.5665 5.70972 12 6.75001V6.75001C12.4335 5.70972 13.2139 4.85174 14.2087 4.32204C15.2034 3.79235 16.351 3.62366 17.4561 3.84468C18.5612 4.0657 19.5555 4.66277 20.27 5.53431C20.9845 6.40585 21.375 7.49803 21.375 8.62501C21.375 15 12 20.25 12 20.25Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Избранное                                        
+                                    <img src="assets/img/icons/tab-arrow.svg" alt=""  class="profile-menu__arrow">
+                                </a>
+                            </li>
+                            <li class="profile-menu__item">
+                                <a href="#" class="profile-menu__link text">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 15C14.0711 15 15.75 13.3211 15.75 11.25C15.75 9.17893 14.0711 7.5 12 7.5C9.92893 7.5 8.25 9.17893 8.25 11.25C8.25 13.3211 9.92893 15 12 15Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5.98047 18.6933C6.54476 17.5819 7.40581 16.6484 8.46816 15.9963C9.53052 15.3442 10.7527 14.999 11.9992 14.999C13.2457 14.999 14.4679 15.3442 15.5303 15.9963C16.5926 16.6484 17.4537 17.5819 18.018 18.6933" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Личные данные             
+                                    <img src="assets/img/icons/tab-arrow.svg" alt=""  class="profile-menu__arrow">
+                                </a>
+                            </li>
+                            <li class="profile-menu__item">
+                                <a href="#" class="profile-menu__link text exit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">                                    
+                                        <path d="M16.3125 8.0625L20.25 12L16.3125 15.9375" stroke="#A4ACAE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9.75 12H20.25" stroke="#A4ACAE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9.75 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V4.5C3.75 4.30109 3.82902 4.11032 3.96967 3.96967C4.11032 3.82902 4.30109 3.75 4.5 3.75H9.75" stroke="#A4ACAE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                        
+                                    Выход
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                        
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-xxl-4">
+                                <div class="profile-part">
+                                    <div class="profile-part__data">
+                                        <div class="profile-part__header">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M16 20C18.7614 20 21 17.7614 21 15C21 12.2386 18.7614 10 16 10C13.2386 10 11 12.2386 11 15C11 17.7614 13.2386 20 16 20Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M7.97656 24.9248C8.72895 23.4428 9.87701 22.1981 11.2935 21.3287C12.71 20.4592 14.3395 19.999 16.0016 19.999C17.6636 19.999 19.2932 20.4592 20.7096 21.3287C22.1261 22.1981 23.2742 23.4428 24.0266 24.9248" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            Личные данные                
+                                        </div>
+                                        <p class="big-text">Александр Петров</p>
+                                        <p class="md-text">+7 (900) ... .. ..</p>
+                                        <p class="md-text">mail@mail.ru</p>
+                                    </div>
+
+                                    <a href="#" class="md-link">Редактировать</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-xxl-4">
+                                <div class="profile-part">
+                                    <div class="profile-part__data">
+                                        <div class="profile-part__header">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M28 22.1627V9.83766C27.999 9.65963 27.9512 9.48499 27.8612 9.33137C27.7712 9.17775 27.6423 9.05057 27.4875 8.96266L16.4875 2.77516C16.3393 2.68958 16.1711 2.64453 16 2.64453C15.8289 2.64453 15.6607 2.68958 15.5125 2.77516L4.5125 8.96266C4.35769 9.05057 4.22879 9.17775 4.13882 9.33137C4.04884 9.48499 4.00096 9.65963 4 9.83766V22.1627C4.00096 22.3407 4.04884 22.5153 4.13882 22.6689C4.22879 22.8226 4.35769 22.9497 4.5125 23.0377L15.5125 29.2252C15.6607 29.3107 15.8289 29.3558 16 29.3558C16.1711 29.3558 16.3393 29.3107 16.4875 29.2252L27.4875 23.0377C27.6423 22.9497 27.7712 22.8226 27.8612 22.6689C27.9512 22.5153 27.999 22.3407 28 22.1627V22.1627Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M22.125 19.0625V12.5625L10 5.875" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M27.8617 9.32471L16.1117 15.9997L4.13672 9.32471" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M16.1125 16L16 29.35" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                                
+                                            Послений заказ
+                                        </div>
+                                        <div>
+                                            <p class="text text-gray mb-1">Производитель</p>
+                                            <p class="text mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                            <p class="text mb-1">1 шт</p>
+                                            <p class="text">Заказ от 20.02.2022</p>
+                                        </div>
+                                        <div class="profile-order-state big-text on-way">
+                                            <img src="assets/img/icons/on-way.svg" alt="">
+                                            В пути
+                                        </div>
+                                        <div class="profile-order-state big-text delivered">
+                                            <img src="assets/img/icons/delivered.svg" alt="">
+                                            Доставлен
+                                        </div>
+                                        <div class="profile-order-state big-text refund">
+                                            <img src="assets/img/icons/refund.svg" alt="">
+                                            Возврат
+                                        </div>
+                                        <div class="profile-order-state big-text ">
+                                            <img src="assets/img/icons/canceled.svg" alt="">
+                                            Отменен
+                                        </div>
+                                    </div>
+                                    <a href="#" class="md-link">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-xxl-4">
+                                <div class="profile-part">
+                                    <div class="profile-part__data">
+                                        <div class="profile-part__header">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001V9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>                                                
+                                            </svg>
+                                            Избранное                                                
+                                        </div>
+                                        <p class="big-text text-gray">375 товаров</p>
+                                        <p class="md-text">Последний добавленный товар:</p>
+                                        <div >
+                                            <p class="md-text text-gray mb-1">Производитель</p>
+                                            <p class="md-text mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                            <p class="md-text">1 шт</p>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="md-link">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    @@include('templates/auth-modal.html')
+    @@include('templates/partner-modal.html')
+    @@include('templates/thanks-modal.html')
+    @@include('templates/footer.html')
+@@include('templates/foot.html')

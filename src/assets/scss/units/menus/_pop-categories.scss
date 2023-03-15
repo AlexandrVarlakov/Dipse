@@ -1,0 +1,200 @@
+.pop-categories{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 118px 118px 118px;
+    grid-auto-rows: auto;
+    grid-gap: 12px;
+    grid-template-areas: 
+    "item1 item2"
+    "item3 item4"
+    "item5 item6"
+    "all all"
+    ;
+    @media (min-width: $sm){
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 16px;
+        grid-template-rows: 118px 118px 118px;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "item1 item1 item1 item2 item2 item2 item2 item2 item4 item4 item4 item4"
+        "item1 item1 item1 item3 item3 item3 item3 item3 item4 item4 item4 item4"
+        "item5 item5 item5 item5 item5 item6 item6 item6 item6  all all all";
+    }
+    @media (min-width: $lg){
+        
+
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 24px;
+        grid-template-rows: 198px 198px 198px;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "item1 item1 item1 item2 item2 item2 item2 item2 item4 item4 item4 item4"
+        "item1 item1 item1 item3 item3 item3 item3 item3 item4 item4 item4 item4"
+        "item5 item5 item5 item5 item5 item6 item6 item6 item6  all all all";
+    }
+    @media (min-width: $xxl){
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 24px;
+        grid-template-rows: 198px 198px;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "item1 item1  item2 item2 item2 item4 item4 item4 item5 item5 item5 item5"
+        "item1 item1  item3 item3 item3 item4 item4 item4 item6 item6 all all";
+        
+    }
+}
+
+
+
+.pop-categories__item{
+    background: #E8F0F2;
+    border-radius: 4px;
+    padding: 12px;
+    color: $black;
+
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+
+    font-family: $nunito;
+
+    font-weight: 600;
+    font-size: .8185rem;
+    line-height: 1.35;
+
+    position: relative;
+    z-index: 1;
+    transition: 200ms 300ms;
+    color: #1C2527;
+
+    p{
+        //transition: 200ms 300ms;
+    }
+
+
+    @media (min-width: $sm){
+        padding: 16px;
+        font-size: 1rem;
+    }
+    @media (min-width: $lg){
+        padding: 24px;
+        font-size: 1.5rem;    
+    }
+    
+    &::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0px;
+        height: 0px;
+        transform: translate(-50%, -50%) rotate(45deg);
+        transition: 1000ms ease-out;
+        border-radius: 50%;
+        background-color: $blue;
+        z-index: -1;
+
+        
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 0px;
+        height: 0px;
+        transform: translate(50%, 50%) rotate(45deg);
+        transition: 1000ms ease-out;
+        //border-radius: 50%;
+        background-color: $blue;
+        z-index: -1;
+        
+    }
+    &:hover{
+        color: #fff;
+        
+    &::before{
+            width: 50vw;
+            height: 50vw;
+            transition: 700ms ease-in-out;
+            
+        }
+        &::after{
+            //width: 1000px;
+            //height: 1000px;
+            //transition: 700ms 150ms ease-in-out;
+            
+        }
+    }
+}
+
+.pop-categories__item.all{
+    grid-column: span 2;
+    padding: 16px;
+    background-color: $blue-dark;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area:  all;
+    @media (min-width: $sm){
+        grid-column: span 3;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    @media (min-width: $xxl){
+        grid-column: span 2;
+    }
+}
+
+.pop-categories__item-1{
+    grid-area: item1;
+    
+}
+.pop-categories__item-2{
+    grid-area: item2;
+}
+.pop-categories__item-3{
+    grid-area: item3;
+}
+.pop-categories__item-4{
+    grid-area: item4;
+}
+.pop-categories__item-5{
+    grid-area: item5;
+}
+.pop-categories__item-6{
+    grid-area: item6;
+}
+
+.pop-categories__icon{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 16px;
+    flex-shrink: 0;
+    @media (min-width: $sm){
+        margin-bottom: 12px;
+    }
+    @media (min-width: $lg){
+        width: 80px;
+        height: 80px;
+        margin-right: 0px;
+        margin-bottom: 24px;
+    }
+    img{
+        width: 24px;
+        height: 24px;
+        @media (min-width: $lg){
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    
+}

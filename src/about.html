@@ -1,0 +1,411 @@
+@@include('templates/head.html')
+<header class="header green-mode">
+    <div class="header__inner">
+        <div class="row align-items-xxl-start align-items-center">
+            <div class="col-sm-1 col-2">
+                <a href="index.html" class="header__logo">
+                    <img src="assets/img/logo.svg" alt="">
+                </a>
+            </div>
+
+            <div class="col-xl-11 col-sm-10 col-8 ps-xxl-0 ps-md-8">
+                <div class="header__top">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="#">Контактная информация</a></li>                    
+                            <li><a href="#">О компании</a></li>                    
+                            <li><a href="#">Способы доставки</a></li>                    
+                            <li><a href="#">Способы оплаты</a></li>                    
+                            <li><a href="#">Контакты</a></li>                    
+                        </ul>
+                    </nav>
+
+                    <ul class="header__contacts">
+                        <li><a href="tel:+73833817442">+7 (383) 381-74-42</a></li>
+                        <li><a href="mailto:sale@dipse.ru">sale@dipse.ru</a></li>
+                    </ul>
+                </div>
+                <div class="header__bottom">
+                    <button class="catalog-btn">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 8H27" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 16H27" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 24H27" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5 8H7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5 16H7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5 24H7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Каталог
+                    </button>
+
+                    <form action="#" class="search-form" method="get">
+                        <img src="assets/img/icons/search.svg" alt="" class="search-form__icon">
+                        <input type="text" name="search" placeholder="Например, транзистор">
+                        <button class="search-form__btn">
+                            <span class="search-form__btn-text">Найти</span>
+                            
+                            <img src="assets/img/icons/button-arrow.svg" alt="" class="search-form__btn-arrow">
+                            <img src="assets/img/icons/search-big.svg" alt="" class="search-form__zoom">
+                        </button>
+                    </form>
+
+                    <a href="#" class="user-btn" data-role="call-modal" data-target=".modal[data-name='auth-modal']">
+                        <span class="user-btn__icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 20C18.7614 20 21 17.7614 21 15C21 12.2386 18.7614 10 16 10C13.2386 10 11 12.2386 11 15C11 17.7614 13.2386 20 16 20Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.97461 24.9248C8.727 23.4428 9.87506 22.1981 11.2915 21.3287C12.708 20.4592 14.3376 19.999 15.9996 19.999C17.6616 19.999 19.2912 20.4592 20.7077 21.3287C22.1242 22.1981 23.2722 23.4428 24.0246 24.9248" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>                                    
+                            </svg>
+                        </span>
+                        <span class="user-btn__text">
+                            Личный кабинет
+                        </span>
+                    </a>
+                    <a href="#" class="user-btn">
+                        <span class="user-btn__icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001V9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <span class="user-btn__text">
+                            Избранное
+                        </span>
+                    </a>
+                    <a href="#" class="user-btn">
+                        <span class="user-btn__icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">                                    
+                                <path d="M23 23H8.725L5.2375 3.825C5.1967 3.59537 5.07691 3.38722 4.89887 3.23657C4.72082 3.08592 4.49572 3.00223 4.2625 3H2" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 28C11.3807 28 12.5 26.8807 12.5 25.5C12.5 24.1193 11.3807 23 10 23C8.61929 23 7.5 24.1193 7.5 25.5C7.5 26.8807 8.61929 28 10 28Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23 28C24.3807 28 25.5 26.8807 25.5 25.5C25.5 24.1193 24.3807 23 23 23C21.6193 23 20.5 24.1193 20.5 25.5C20.5 26.8807 21.6193 28 23 28Z" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.8125 18H23.5125C23.98 18.0014 24.433 17.838 24.7919 17.5386C25.1508 17.2391 25.3927 16.8227 25.475 16.3625L27 8H6" stroke="#1C2527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>                                    
+                            </svg>
+                            <span class="user-btn__product-qty">12</span>
+                        </span>
+                        <span class="user-btn__text">
+                            Корзина
+                        </span>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-2 d-xxl-none">
+                <div class="hamburger  ">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            
+
+        </div>
+        
+
+        
+    </div>
+
+    
+</header>
+    <main>
+        @@include('templates/hamburger-menu.html')
+        
+        @@include('templates/catalog-menu.html')
+
+
+        @@include('templates/bottom-menu.html')
+
+
+
+        <section class="section start-about-section">
+            <div class="section__inner">
+
+                <div class="breadcrumbs mb-3 mb-sm-8">
+                    <a href="index.html">главная</a>                    
+                    <a >О компании</a>                    
+                </div>
+
+                <div class="about-section">
+                    
+                    <div class="about-section__text-block">
+                        
+                        <div class="about-section__title-block">
+                            <h1 class="h1 mb-6 mb-lg-6">Дипси</h1>
+                            <p class="about-section__decoration-text">Dipse</p>
+                        </div>
+        
+                        <p class="about-section__text mb-4 mb-lg-7">Обширный, регулярно обновляемый, каталог включает более 3 000 000 наименований товаров. Интеллектуальный и удобный поиск товаров, различные виды доставки и способы оплаты. Актуальная информация о наличии товаров и сроках поставки.</p>
+                        <p class="about-section__text mb-6 mb-lg-6 mb-xxl-8">Мы доставляем заказы во все регионы России, в Беларусь, Казахстан, Армению и Киргизию.</p>
+        
+                        <button class="button button-green " data-role="call-modal" data-target=".modal[data-name='feedback-modal']">
+                            Написать нам
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 3L17 7L13 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1 7H4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 7L15 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>   
+                        </button>
+                    </div>
+                    <div class="about-section__img-block">
+                        <div class="about-section__img">
+
+                        </div>
+                        <img src="assets/img/about/handmark.png" alt="" class="about-section__hand-mark">
+
+                        <img src="assets/img/about/green-union.svg" alt="" class="about-section__green-decor">
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="section mb-xxl-12 mb-lg-10 mb-8 pb-lg-8">
+            <div class="section__inner">
+                <div class="advantages">
+                    <div class="advantages__item">
+                        <div class="advantages__item-inner">
+                            <img src="assets/img/icons/advantage-1.svg" alt="" class="advantages__icon">
+                            <p class="advantages__text big-text-thin">Уникальный комплекс know how
+                                и компетенций, направленных
+                                на обслуживание клиентов</p>
+                        </div>                        
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__item-inner">
+                            <img src="assets/img/icons/advantage-2.svg" alt="" class="advantages__icon">
+                            <p class="advantages__text big-text-thin">Развитый клиентский онлайн-сервис сопровождения сделки. Высокий уровень автоматизации сервиса</p>
+                        </div>
+                        
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__item-inner">
+                            <img src="assets/img/icons/advantage-3.svg" alt="" class="advantages__icon">
+                            <p class="advantages__text big-text-thin">Передовая, автоматизированная логистика и самый большой склад в России для электронных компонентов</p>
+                        </div>                        
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__item-inner">
+                            <img src="assets/img/icons/advantage-4.svg" alt="" class="advantages__icon">
+                            <p class="advantages__text big-text-thin">Широта ассортимента: 2 000 000 позиций в наличии и под заказ</p>
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__item-inner">
+                            <img src="assets/img/icons/advantage-5.svg" alt="" class="advantages__icon">
+                            <p class="advantages__text big-text-thin">Наилучшая на рынке электроники скорость доставки товара
+                                до клиента</p>
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__item-inner">
+                            <img src="assets/img/icons/advantage-6.svg" alt="" class="advantages__icon">
+                            <p class="advantages__text big-text-thin">Очень широкая сеть выдачи покупок по всей стране
+                                и в странах ЕАЭС</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section mb-xxl-12 mb-lg-10 mb-8 pb-lg-8">
+            <div class="section__inner">
+                <div class="row">
+                    <div class="col-xxl-10 col-12">
+                        <h2 class="h2 mb-4 mb-sm-8">Заголовок</h2>
+                        <p class="big-text-thin mb-4 mb-sm-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quasi. Autem neque, nam vero placeat explicabo officia necessitatibus sunt sed eos laborum sequi recusandae ullam esse deserunt eaque eligendi aut illum distinctio sapiente atque dignissimos impedit dolores. Ipsa similique ratione ut tempore ab culpa earum, et libero iste nulla nisi adipisci inventore aliquam deleniti reiciendis aperiam harum, suscipit dolores dolor eos voluptas maxime rerum numquam? Sequi tempore esse quae facere voluptates earum porro eum ducimus assumenda, deleniti error id vitae ut impedit nihil repellat modi incidunt veniam! Dolor fugiat deserunt reiciendis incidunt alias rem unde explicabo soluta, quasi, distinctio placeat, sapiente ipsa dolores obcaecati saepe eaque adipisci odit tempore voluptatem debitis pariatur. Doloribus perferendis ex iure alias, sapiente perspiciatis esse eos porro quis possimus molestias error animi dolores consectetur at nam qui ratione odio non ipsa reprehenderit placeat? Eligendi exercitationem harum laborum quod odit, voluptatem animi natus adipisci accusantium rem?</p>
+                        <p class="big-text-thin mb-4 mb-sm-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quasi. Autem neque, nam vero placeat explicabo officia necessitatibus sunt sed eos laborum sequi recusandae ullam esse deserunt eaque eligendi aut illum distinctio sapiente atque dignissimos impedit dolores. Ipsa similique ratione ut tempore ab culpa earum, et libero iste nulla nisi adipisci inventore aliquam deleniti reiciendis aperiam harum, suscipit dolores dolor eos voluptas maxime rerum numquam? Sequi tempore esse quae facere voluptates earum porro eum ducimus assumenda, deleniti error id vitae ut impedit nihil repellat modi incidunt veniam! Dolor fugiat deserunt reiciendis incidunt alias rem unde explicabo soluta, quasi, distinctio placeat, sapiente ipsa dolores obcaecati saepe eaque adipisci odit tempore voluptatem debitis pariatur. Doloribus perferendis ex iure alias, sapiente perspiciatis esse eos porro quis possimus molestias error animi dolores consectetur at nam qui ratione odio non ipsa reprehenderit placeat? Eligendi exercitationem harum laborum quod odit, voluptatem animi natus adipisci accusantium rem?</p>
+
+                        <div class="decoration-img mb-4 mb-sm-8">
+                            <img src="assets/img/about/img.png" alt="" class="decoration-img__img">
+                            <img src="assets/img/about/handmark.png" alt="" class="decoration-img__decor">
+                        </div>
+                        <h3 class="h3 mb-4 mb-sm-8">Подзаголовок</h3>
+                        <p class="big-text-thin mb-4 mb-sm-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quasi. Autem neque, nam vero placeat explicabo officia necessitatibus sunt sed eos laborum sequi recusandae ullam esse deserunt eaque eligendi aut illum distinctio sapiente atque dignissimos impedit dolores. Ipsa similique ratione ut tempore ab culpa earum, et libero iste nulla nisi adipisci inventore aliquam deleniti reiciendis aperiam harum, suscipit dolores dolor eos voluptas maxime rerum numquam? Sequi tempore esse quae facere voluptates earum porro eum ducimus assumenda, deleniti error id vitae ut impedit nihil repellat modi incidunt veniam! Dolor fugiat deserunt reiciendis incidunt alias rem unde explicabo soluta, quasi, distinctio placeat, sapiente ipsa dolores obcaecati saepe eaque adipisci odit tempore voluptatem debitis pariatur. Doloribus perferendis ex iure alias, sapiente perspiciatis esse eos porro quis possimus molestias error animi dolores consectetur at nam qui ratione odio non ipsa reprehenderit placeat? Eligendi exercitationem harum laborum quod odit, voluptatem animi natus adipisci accusantium rem?</p>
+                        <p class="big-text-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quasi. Autem neque, nam vero placeat explicabo officia necessitatibus sunt sed eos laborum sequi recusandae ullam esse deserunt eaque eligendi aut illum distinctio sapiente atque dignissimos impedit dolores. Ipsa similique ratione ut tempore ab culpa earum, et libero iste nulla nisi adipisci inventore aliquam deleniti reiciendis aperiam harum, suscipit dolores dolor eos voluptas maxime rerum numquam? Sequi tempore esse quae facere voluptates earum porro eum ducimus assumenda, deleniti error id vitae ut impedit nihil repellat modi incidunt veniam! Dolor fugiat deserunt reiciendis incidunt alias rem unde explicabo soluta, quasi, distinctio placeat, sapiente ipsa dolores obcaecati saepe eaque adipisci odit tempore voluptatem debitis pariatur. Doloribus perferendis ex iure alias, sapiente perspiciatis esse eos porro quis possimus molestias error animi dolores consectetur at nam qui ratione odio non ipsa reprehenderit placeat? Eligendi exercitationem harum laborum quod odit, voluptatem animi natus adipisci accusantium rem?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section mb-xxl-12 mb-lg-10 mb-8 pb-lg-8">
+            <div class="section__inner">
+                <div class="row">
+                    <div class="col-xxl-10 col-12">
+                        <div class="requisites-title  mb-5 mb-sm-8">
+                            <h2 class="h2">Реквизиты</h2>
+
+                            <div class="copy-requisites-container">
+                                <button class="copy-requisites">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">                                    
+                                        <path d="M21 21H27V5H11V11" stroke="#A4ACAE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M21 11H5V27H21V11Z" stroke="#A4ACAE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>                                    
+                                    </svg>
+                                        
+                                </button>
+    
+                                <div class="copy-success">Скопированно</div>
+                            </div>
+                            
+                        </div>
+                        <ul class="requisites-list">
+                            <li class="requisites-list__item">
+                                <span class="requisites-list__title big-text-thin">Полное название организации</span>
+                                <span class="requisites-list__text big-text-thin">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "АЙСИ ИМПОРТ"</span>
+                            </li>
+                            <li class="requisites-list__item">
+                                <span class="requisites-list__title big-text-thin">Адрес</span>
+                                <span class="requisites-list__text big-text-thin">Новосибирская обл., Новосибирский район, с. Каменка, микрорайон Близкий, д. 876А</span>
+                            </li>
+                            <li class="requisites-list__item">
+                                <span class="requisites-list__title big-text-thin">ИНН</span>
+                                <span class="requisites-list__text big-text-thin">5402016507</span>
+                            </li>
+                            <li class="requisites-list__item">
+                                <span class="requisites-list__title big-text-thin">ОГРН</span>
+                                <span class="requisites-list__text big-text-thin">1165476077095</span>
+                            </li>
+                            <li class="requisites-list__item">
+                                <span class="requisites-list__title big-text-thin">КПП</span>
+                                <span class="requisites-list__text big-text-thin">543301001</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section mb-xxl-10 mb-lg-10 mb-5 mb-sm-8 pb-lg-8 pb-xxl-4">
+            <div class="section__inner">
+                <div class="row">
+                    <div class="col-12 col-sm-7">
+                        <h2 class="h2 mb-5 mb-lg-8 mb-xxl-11">Хотите стать поставщиком Dipse?</h2>
+                        <h3 class="h3 mb-5 mb-lg-7">Требования к поставщику</h3>
+                        <ul class="big-text-thin partner-advantages">
+                            <li>Юридическое лицо или ИП</li>
+                            <li>Работа с ЭДО: Электронный Документооборот</li>
+                            <li>Наличие контента: фото, описание, сертификаты, инструкции и т.п.</li>
+                            <li>Наличие контента: фото, описание, сертификаты, инструкции и т.п.</li>
+                            <li>Обмен данными по интерфейсу API или файл .xml</li>
+                            <li>Актуальные складские запасы: обновление не реже 1 раза в сутки</li>
+                            <li>Комплектация и отгрузка в течение 1 дня</li>
+                            <li>Гибкая работа с рекламациями</li>
+                            <li>Доставка до склада «ЧИП и ДИП» за счет поставщика</li>                            
+                        </ul>
+                
+                    </div>
+                    <div class="col-12 col-sm-5 partner-img-block">
+                        <img src="assets/img/about/partners.png" alt="" class="partner-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section mb-xl-12  mb-7 pb-xl-8">
+            <div class="section__inner">
+                <div class="i-partner-banner">
+                    <div class="i-partner-banner__icon">
+                        <img src="assets/img/icons/handshake.svg" alt="">
+                    </div>
+                    <div class="i-partner-banner__text-block">
+                        <h3 class="i-partner-banner__title">Стать партнёром </h3>
+                        <p class="i-partner-banner__text">Приглашаем к сотрудничеству  производителей и дистрибьютеров</p>
+                    </div>
+                    <div class="i-partner-banner__button-block">
+    
+                        <button href="#" class="i-partner-banner__button" data-role="call-modal" data-target=".modal[data-name='partner-modal']">
+                            Подать заявку
+                            <img src="assets/img/icons/button-arrow.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section">
+            <div class="section__inner">
+                <div class="mb-xl-12  mb-7 pb-xl-8 pb-lg-12 pt-lg-12 pt-xl-0">
+                    <div class="row">
+                        <div class="col-12 priv-col" >
+                            <a href="#" class="big-link me-sm-10 mb-8 mb-sm-0">Политика конфиденциальности</a>
+                            <a href="#" class="big-link">Пользовательское Соглашение</a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="bottom-adv py-11 row d-xl-flex d-none">
+                    <div class="col-xxl-10 col-12 mx-auto bottom-adv__list">
+                        <div class="bottom-adv__item big-text-thin">
+                            <img src="assets/img/icons/truck.svg" alt="">
+                            Быстрая доставка по РФ
+                        </div>
+                        <div class="bottom-adv__item big-text-thin">
+                            <img src="assets/img/icons/barcode.svg" alt="">
+                            Точная складская информация
+                        </div>
+                        <div class="bottom-adv__item big-text-thin">
+                            <img src="assets/img/icons/credit_card.svg" alt="">
+                            Различные варианты оплаты
+                        </div>
+                        <div class="bottom-adv__item big-text-thin">
+                            <img src="assets/img/icons/calendar.svg" alt="">
+                            30 дней на возврат
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="modal feedback-modal" data-name="feedback-modal">
+
+        <button class="close-btn">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">                        
+                <path d="M40 8L8 40" stroke="#A4ACAE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M40 40L8 8" stroke="#A4ACAE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>                        
+            </svg>
+        </button>
+
+        
+            <div class="mb-4 mb-sm-6 mb-xl-10">
+                <h2 class="h2 mb-1 mb-sm-6 mb-xl-10">Нужна дополнительная информация?</h2>
+                <h3 class="h3 text-center ">Задайте свой вопрос</h3>
+            </div>
+            <div >
+                <form action="script.php" >
+                    
+                        <input type="text" class="input mb-1 mb-sm-3 mb-lg-5" name="name" placeholder="Ваше имя" required >
+                        <input type="text" class="input mb-1 mb-sm-3 mb-lg-5" name="phone" placeholder="Ваш телефон" required>
+                        
+                        <div class="faq-textarea mb-1 mb-sm-3 mb-lg-5">
+                            <textarea name="text" class="textarea" placeholder="Вопрос"></textarea>
+                        </div>
+                        
+                        
+                        
+                        
+                        <button class="button button-green w-100">
+                            Отправить
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 3L17 7L13 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1 7H4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 7L15 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                        </button>
+                        
+                        
+                    
+                </form>
+            </div>
+        
+    </div>
+    <div class="thanks-modal">
+        <img src="assets/img/logo.svg" alt="" class="mb-4">
+        <h3 class="h3">Спасибо! <br />Ваша заявка принята</h3>
+        
+    </div>
+    @@include('templates/auth-modal.html')
+    @@include('templates/partner-modal.html')
+    @@include('templates/thanks-modal.html')
+    @@include('templates/footer.html')
+@@include('templates/foot.html')

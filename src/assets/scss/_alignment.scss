@@ -1,0 +1,110 @@
+.justify-content-center{
+    justify-content: center !important;    
+}
+
+.justify-content-start{
+    justify-content: flex-start !important;    
+}
+
+.justify-content-end{
+    justify-content: flex-end !important;    
+}
+
+.justify-content-between{
+    justify-content: space-between !important;
+}
+.justify-content-around{
+    justify-content: space-around !important;
+}
+
+.justify-content-evenly{
+    justify-content: space-evenly !important;
+}
+
+
+.align-items-center{
+    align-items: center !important;    
+}
+
+.align-items-start{
+    align-items: flex-start !important;    
+}
+
+.align-items-end{
+    align-items: flex-end !important;    
+}
+.align-items-stretch{
+    align-items: stretch !important;
+}
+
+@each $bp-name, $break-point in $break-points {
+
+    .justify-content-#{$bp-name}-center{
+        
+        @media (min-width: $break-point){
+            justify-content: center !important;    
+        }
+    }
+    
+    .justify-content-#{$bp-name}-start{          
+        @media (min-width: $break-point){
+            justify-content: flex-start !important;
+        }  
+    }
+    
+    .justify-content-#{$bp-name}-end{
+        
+        @media (min-width: $break-point){
+            justify-content: flex-end !important;    
+        }
+    }
+
+    .justify-content-#{$bp-name}-between{
+        @media (min-width: $break-point){
+            justify-content: space-between !important;
+        }
+    }
+    .justify-content-#{$bp-name}-around{
+        @media (min-width: $break-point){
+            justify-content: space-around !important;
+        }
+    }
+    
+    .justify-content-#{$bp-name}-evenly{
+        @media (min-width: $break-point){
+            justify-content: space-evenly !important;
+        }
+    }
+
+
+        
+    .align-items-#{$bp-name}-center{
+            
+        @media (min-width: $break-point){
+            align-items: center !important;
+        }
+    }
+    
+    .align-items-#{$bp-name}-start{
+         
+        @media (min-width: $break-point){
+            align-items: flex-start !important;
+        }   
+    }
+    
+    .align-items-#{$bp-name}-end{
+            
+        @media (min-width: $break-point){
+            align-items: flex-end !important;
+        }
+    }
+    .align-items-#{$bp-name}-stretch{
+        
+        @media (min-width: $break-point){
+            align-items: stretch !important;
+        }
+    }
+
+    
+
+}

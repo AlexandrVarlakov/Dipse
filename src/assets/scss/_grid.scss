@@ -1,0 +1,40 @@
+
+
+@for $i from 1 through 12 {
+	.col-#{$i} {
+		
+		flex-shrink: 1;
+		width: calc($i / 12) * 100% ;
+
+        padding-left: calc(.5 * var(--gutter-x));
+        padding-right: calc(.5 * var(--gutter-x));
+	}
+}
+
+@each $name, $break-point in $break-points {
+	@for $i from 1 through 12 {
+		.col-#{$name}-#{$i}{
+            
+            padding-left: calc(.5 * var(--gutter-x));
+            padding-right: calc(.5 * var(--gutter-x));
+
+			@media (min-width: $break-point){
+							
+				flex-shrink: 1;
+				width: calc($i / 12) * 100% ;
+			}
+		}
+	}
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-0.5 * var(--gutter-x));
+    margin-right: calc(-0.5 * var(--gutter-x));    
+
+    gap: var(--gutter-x) 0;
+
+    
+}
+

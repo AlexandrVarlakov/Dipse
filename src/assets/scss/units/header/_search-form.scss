@@ -1,0 +1,122 @@
+.search-form{
+    position: relative;
+    flex-shrink: 1;
+    flex-grow: 1;
+
+    display: none;
+
+    @media (min-width: $sm){
+        display: unset;
+    }
+
+
+    input{
+        width: 100%;
+        @include text;
+        
+        position: relative;
+        z-index: 1;
+        background-color: $gray-light;
+        
+        height: 100%;
+
+        &::placeholder{
+            opacity: 1;
+            color: $gray;
+        }
+        
+        padding: 14px 24px 14px 46px ;
+        @media (min-width: $lg){
+            padding: 17px 152px 17px 56px ;
+        }
+    }
+
+
+}
+.search-form.active{
+    input{
+        border-radius: 0 4px 4px 0;
+    }
+    .search-form__btn{
+        visibility: visible;
+        opacity: 1;
+
+    }
+}
+.search-form__icon{
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    z-index: 5;
+    transform: translate(0, -50%);
+    @media (min-width: $lg){
+        left: 24px;
+    }
+}
+
+.search-form__btn{    
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    
+    
+    line-height: 1.35;
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;  
+    color: #FFFFFF;
+    display: inline-flex;
+    align-items: center;
+    z-index: 5;
+    transition: 300ms;
+    background-color: $blue-dark;
+    border-radius: 0 4px 4px 0;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+    &:hover{
+        background-color: #24C0EB;
+    }
+
+    
+    
+    img{
+        flex-shrink: 0;
+        
+
+        @media (min-width: $lg){
+            margin-left: 8px;
+        }
+    }
+    padding: var(--header-vertical-padding) .75rem;
+    @media (min-width: $lg){
+        padding: var(--header-vertical-padding) 2rem;
+    }
+    @media (min-width: $xxl){
+        font-size: .875rem;
+        font-weight: 800;
+    }
+}
+
+.search-form__zoom{
+    @media (min-width: $lg){
+        display: none;
+    }
+}
+
+
+.search-form__btn-text{
+    display: none;
+    @media (min-width: $lg){
+        display: unset;
+    }
+}
+
+.search-form__btn-arrow{
+    display: none;
+    @media (min-width: $lg){
+        display: unset;
+    }
+}
+

@@ -1,0 +1,158 @@
+.button-radio{
+
+}
+
+.button-radio__radio{
+    display: none;
+}
+
+.button-radio__visible{
+    font-size: .9375rem;
+    line-height: 1.35;
+    display: inline-block;
+    font-weight: 600;
+    outline: 2px solid #CFD9DC;
+    outline-offset: -1px;
+    color: $black;
+    border-radius: 4px;
+    padding: 16px;
+    position: relative;
+    transition: 300ms;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    @media (min-width: $sm){
+        padding: 16px 24px;
+    }
+    @media (min-width: $lg){
+        font-size: 1.25rem;
+        
+    }
+
+    &:hover{
+        color: $blue;
+        outline:  2px solid $blue;    
+    }
+}
+
+.button-radio__radio:checked + .button-radio__visible{
+    outline:  2px solid $blue-dark;
+    color: $blue-dark;
+    z-index: 2;
+}
+
+.button-radio-group{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button-radio-group.with-gap{
+    gap: 8px;  
+    .button-radio__visible{  
+        margin: 0;
+
+    }
+
+    @media (min-width: $sm){
+        gap: 16px;  
+    }
+}
+.delivery-data{
+    display: flex;
+    
+    gap: 12px;
+
+
+    .text{
+        @media (min-width: $lg){
+            font-size: 1.25rem;
+        }
+    }
+    
+}
+
+.delivery-data__icon{
+    flex-shrink: 0;
+    max-width: 32px;
+    img{
+        max-width: 32px;
+    }
+}
+
+.delivery-data__text-block{
+    flex-shrink: 1;
+    flex-grow: 1;
+    @media (min-width: $sm){
+        padding-top: 8px;
+    }   
+}
+
+.delivery-data__list-item{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.delivery-data__dashed{
+    flex-shrink: 2;
+    flex-grow: 2;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        display: block;
+        left: 0;
+        bottom: 2px;
+        border-bottom: 2px dashed #CFD9DC;
+        
+    }
+}
+
+.about-order{
+    background: $gray-light;
+
+    padding: 24px 12px;
+    margin-left: -12px;
+    width: calc(100% + 24px);
+
+    @media (min-width: $sm){
+        margin-left: 0px;
+        width: 100% ;
+        padding: 24px;
+    }
+    @media (min-width: $lg){
+        position: sticky;
+        top: 132px;
+    }
+    @media (min-width: $xl){
+        padding: 40px;
+
+        
+    }
+}
+
+.ordering-pos{
+    display: flex;
+
+    span + span{
+        margin-left: 8px;
+    }
+}
+
+.ordering-applypromo-wrap{
+    @media (min-width: $sm){
+        display: flex;
+        align-items: flex-end;
+    }
+}
+.text.l-promocode{
+    @media (min-width: $lg){
+        font-size: 1.25rem;
+    }
+}
+
+.big-price.ordering-calc-summ{
+    @media (min-width: $lg){
+        font-size: 2.25rem;
+    }
+}
