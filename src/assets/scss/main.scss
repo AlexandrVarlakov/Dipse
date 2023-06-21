@@ -886,7 +886,7 @@ label{
 .replay-link{
 	font-family: $nunito;
 	font-weight: 600;
-	font-size: .9375rem;
+	font-size: 1.25rem;
 	line-height: 1.35;	
 	color: $blue-dark;
 	transition: 300ms;
@@ -1787,3 +1787,5 @@ label{
 
 @import 'units/profile/profile';
 @import 'units/ordering/ordering';
+
+@import 'units/ordering/h-order';

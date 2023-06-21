@@ -21,10 +21,20 @@
 .profile-menu__link.exit{
     color: $gray
 }
+
+.profile-menu__icon{
+    position: relative;
+    .user-btn__product-qty{
+        transform: translate(25%, -25%);
+    }
+        
+    
+}
 .profile-menu__link{
     display: inline-flex;
     align-items: center;
     gap: 16px;
+    position: relative;
     svg, img{
         flex-shrink: 0;
     }

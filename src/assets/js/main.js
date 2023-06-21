@@ -834,7 +834,7 @@ sortPropBtns.forEach( btn => {
 
             this.classList.add('active');
 
-            filterForm.submit();
+            
         }
     })
 })
@@ -1134,4 +1134,35 @@ if ( authModalTabs.length ){
         });
     })
 }
+
+
+
+const ordersList = document.querySelectorAll('.h-order');
+if ( ordersList.length ){
+    ordersList.forEach( order => {
+        order.addEventListener('click', function(){
+
+            if ( this.classList.contains('hover-active') ) return false
+
+
+            if ( !this.classList.contains('active') ){
+                this.classList.add('active')
+            } else{
+                this.classList.remove('active')
+            }
+        })
+        order.addEventListener('mouseenter', function(){
+            if ( this.classList.contains('active') ){
+                this.classList.remove('active')
+                
+            } 
+            this.classList.add('hover-active')
+        })
+        order.addEventListener('mouseleave', function(){
+            this.classList.remove('hover-active')
+        })
+        //mouseover/mouseout
+    }) 
+}
+
 

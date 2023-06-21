@@ -901,7 +901,7 @@
     @media (min-width: $sm){
         padding: 24px;
 
-        grid-template-columns: 132px 1fr 205px;
+        grid-template-columns: 132px 1fr;
         grid-gap: 14px 28px;
         grid-template-rows: auto auto;
     }
@@ -933,7 +933,7 @@
 
     @media (min-width: $xl){
         p, a{
-            max-width: 90%;
+            
         }
     }
 }
@@ -1225,5 +1225,67 @@
     @media (min-width: $xxl){
         padding: 0px;
         padding-bottom: 24px;
+    }
+}
+
+
+.receiver-data{
+    background-color: #E8F0F2;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+
+    @media (min-width: $sm){
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 24px 40px;
+        padding: 32px;
+    }
+
+    @media (min-width: $lg){
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        grid-gap: 24px 40px;
+    }
+}
+.receiver-data__block.address{
+    @media (min-width: $sm){
+        grid-column: 1 / -1;
+        padding-top: 26px;
+    }
+    @media (min-width: $lg){
+        grid-column: 3 / -1;
+        grid-row: 1 / -1;
+        padding-top: 0px;
+    }
+}
+
+.receiver-data__title-block{
+    color: $blue-darkdark;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.375;
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+    img{
+        flex-shrink: 0;
+    }
+}
+
+.receiver-data__text{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* black */
+    color: #1C2527;
+
+    @media (min-width: $md){
+        font-size: 20px;
     }
 }

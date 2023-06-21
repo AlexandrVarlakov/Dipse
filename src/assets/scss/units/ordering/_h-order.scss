@@ -1,0 +1,225 @@
+.h-order{
+    outline: #CFD9DC solid 1px;
+    
+    transition: 300ms;
+    &:hover{
+        background-color: #fff;
+        box-shadow: 0px 4px 30px rgba(24, 139, 171, 0.2);
+    }
+
+    
+    @media (min-width: $sm){
+        position: relative;
+    }
+    @media (min-width: $md){
+        .md-text{
+            font-size: 20px;
+        }
+    }
+
+    @media (min-width: $xl){
+        display: flex;
+
+        
+    }
+}
+
+.h-order__left-block{
+    
+}
+
+.h-order.active, .h-order.hover-active{
+    
+    background-color: #fff;
+    box-shadow: 0px 4px 30px rgba(24, 139, 171, 0.2);
+    
+    .h-order__link{
+        height: 160px;
+        @media (min-width: $sm){
+            height: 100%;
+            width: 245px;
+            padding-left: 40px;
+        }
+        @media (min-width: $xl){
+            height: auto;
+            width: 264px;
+        }
+    }
+
+    .h-order__rings{
+        width: 290px;
+        height: 290px;
+    }
+
+    .h-order__link-arrow{
+        margin-left: 8px;
+        opacity: 1;
+    }
+
+    @media (min-width: $xl) AND (max-width: $xxl){
+        .h-order__date{
+            display: none;
+            
+        }
+
+        .h-order__main{
+            //grid-template-columns: 1fr 220px;
+        }
+    }
+
+    
+}
+.h-order__date{
+    transition: 300ms;
+
+}
+.h-order__amount{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.385;
+    color: #1C2527;
+
+    @media (min-width: $md){
+        font-size: 28px;
+    }
+}
+
+.h-order__main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+
+    padding: 16px;
+    @media (min-width: $sm){
+        padding: 40px;
+        
+    }
+
+    @media (min-width: 440px){
+        display: grid;
+        grid-template-columns: 1fr 205px;
+        align-items: center;
+        
+    }
+
+    @media (min-width: $xl){
+        flex-grow: 1;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media (min-width: $xl){
+        grid-template-columns: 1fr 400px;
+    }
+}
+
+.h-order__qty{
+    display: inline-block;
+}
+
+.h-order__rbt{
+    @media (min-width: $xl){
+        display: flex;
+        align-items: center;
+    }
+}
+
+.h-order__controls {
+    grid-column: 1 / -1;
+    @media (min-width: $sm){
+        grid-column: 3 / 4;
+        grid-row: 1 / -1;
+        align-self: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p,a{
+            text-align: center;
+        }
+    }
+    @media (min-width: $xl){
+        align-items: flex-end;
+    }
+}
+
+
+.h-order__link{
+    background-color: #24C0EB;;
+    height: 0px;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    transition: 300ms;
+    position: relative;    
+    overflow: hidden;
+   
+    @media (min-width: $sm){
+        position: absolute;
+        right: 0;
+        width: 0;
+        height: 100%;
+        top: 0;
+        padding-left: 0px;
+    }
+
+    @media (min-width: $xl){
+        position: relative;
+        top: initial;
+        right: initial;
+        height: auto;
+    }
+}
+
+.h-order__rings{
+    position: absolute;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    left: 20%;
+    top: 50%;
+    border-radius: 50%;
+    
+    border: 2px solid rgba($color: #fff, $alpha: .3);
+    transform: translate(-50%, -50%);
+    transition: 500ms 300ms linear;
+
+    @media (min-width: $xl){
+        left: 28%;
+    }
+
+    div{
+        position: absolute;
+        width: 53%;
+        height: 53%;
+        left: 50%;
+        top: 50%;
+        border-radius: 50%;
+        
+        border: 2px solid rgba($color: #fff, $alpha: .3);
+        transform: translate(-50%, -50%);
+        transition: 500ms 300ms linear;
+    }
+}
+
+
+.h-order__link-text{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.375;
+    color: #FFFFFF;
+    position: relative;
+    z-index: 5;
+}
+.h-order__link-arrow{
+    display: inline-block;
+    line-height: 0;
+    margin-left: -12px;
+    position: relative;
+    z-index: 5;
+    transition: 500ms 300ms linear;
+    opacity: 0;
+}
