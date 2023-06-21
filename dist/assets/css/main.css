@@ -9702,7 +9702,7 @@ label {
 }
 
 #retype-password.error {
-  border-color: #FF5E7B;
+  outline: #FF5E7B solid 2px;
 }
 
 .grid-form.password-form {
