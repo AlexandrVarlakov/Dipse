@@ -376,7 +376,7 @@ main.can-sticky{
 	&:hover{
 		background-color: $blue;
 	}	
-
+.button.button-gree
 	&:active{
 		background-color: transparent;
 		outline: 2px solid $blue;
@@ -1756,6 +1756,82 @@ label{
 	align-items: center;
 
 
+}
+
+.password-wrap{
+	position: relative;
+}
+
+.show-password-btn{
+	position: absolute;
+	right: 24px;
+	top: 50%;
+	transform: translate(0, -50%);
+
+	width: 24px;
+	height: 24px;
+	background: url('../img/icons/show-password.svg');
+	cursor: pointer;
+}
+
+.password-messages-box{
+	.message{
+		
+		align-items: center;
+		font-family: 'Nunito Sans';
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 1;
+		display: none;
+		img{
+			flex-shrink: 0;
+			margin-right: 12px;
+
+		}
+	}
+
+	.message.success{
+		color: #61BE5F
+	}
+	.message.error{
+		color: #FF5E7B;
+	}
+}
+
+.password-messages-box.success{
+	.message.success{
+		display: inline-flex;
+	}
+}
+
+.password-messages-box.error{
+	.message.error{
+		display: inline-flex;
+	}
+}
+
+
+.password-messages-box:not(.success, .error){
+	display: none;
+}
+
+
+.show-password-btn.active{
+	background: url('../img/icons/hide-password.svg');
+	
+}
+
+.button.button-green:disabled{
+	
+		background-color: #C6CBCC;
+		cursor: not-allowed;
+	
+}
+#retype-password.error{
+	border-color: #FF5E7B;
+}
+.grid-form.password-form{
+	grid-template-columns: 1fr;
 }
 
 

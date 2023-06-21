@@ -1166,3 +1166,64 @@ if ( ordersList.length ){
 }
 
 
+const showBtnsPassword = document.querySelectorAll('.show-password-btn');
+
+if ( showBtnsPassword.length ){
+    showBtnsPassword.forEach( btn => {
+        btn.addEventListener('click', function(){
+            let parentWrap = this.closest('.password-wrap');
+            let input = parentWrap.querySelector('input');
+            if ( !this.classList.contains('active') ){
+                this.classList.add('active');
+                input.setAttribute('type', 'text');
+            } else{
+                this.classList.remove('active');
+                input.setAttribute('type', 'password');
+            }
+        })
+    } )
+
+
+    let password = document.querySelector('#password');
+    let retypePassword = document.querySelector('#retype-password');
+    let savePassword = document.querySelector('#save-password')
+    let  passwordMessageBox =  document.querySelector('.password-messages-box')
+
+
+    password.addEventListener('input', function(){
+        if (this.value.length > 0 && this.value === retypePassword.value ){
+            savePassword.removeAttribute('disabled')
+            passwordMessageBox.classList.add('success');
+            retypePassword.classList.remove('error');
+            passwordMessageBox.classList.remove('error');
+        } else if (this.value.length === 0 || retypePassword.value.length === 0){
+            savePassword.setAttribute('disabled', 'disabled');
+            passwordMessageBox.classList.remove('error');
+            passwordMessageBox.classList.remove('success');
+            retypePassword.classList.remove('error');
+        } else if (this.value.length > 0 && retypePassword.value.length > 0  && retypePassword.value !== this.value){
+            savePassword.setAttribute('disabled', 'disabled');
+            passwordMessageBox.classList.add('error');
+            retypePassword.classList.add('error');
+            passwordMessageBox.classList.remove('success');        
+        }
+    })
+    retypePassword.addEventListener('input', function(){
+        if (this.value.length > 0 && this.value === password.value ){
+            savePassword.removeAttribute('disabled')
+            passwordMessageBox.classList.add('success');
+            passwordMessageBox.classList.remove('error');
+            retypePassword.classList.remove('error');
+        } else if (this.value.length === 0 || password.value.length === 0){
+            savePassword.setAttribute('disabled', 'disabled');
+            passwordMessageBox.classList.remove('error');
+            passwordMessageBox.classList.remove('success');
+            retypePassword.classList.remove('error');
+        } else if (this.value.length > 0 && password.value.length > 0  && password.value !== this.value){
+            savePassword.setAttribute('disabled', 'disabled');
+            passwordMessageBox.classList.add('error');
+            passwordMessageBox.classList.remove('success');   
+            retypePassword.classList.add('error');     
+        }
+    })
+}
