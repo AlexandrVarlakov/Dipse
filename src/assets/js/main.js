@@ -1227,3 +1227,16 @@ if ( showBtnsPassword.length ){
         }
     })
 }
+
+
+let togglersModal = document.querySelectorAll('[data-target="toggle-modal"]');
+
+if ( togglersModal.length ){
+    togglersModal.forEach( tg => {
+        tg.addEventListener('click', function(){
+            let modalLink = this.getAttribute('data-target-modal');
+            calledModal.closeModal();
+            calledModal = new easyModal(modalLink, options);
+        })
+    })
+}
